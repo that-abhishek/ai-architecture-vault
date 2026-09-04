@@ -1,0 +1,17 @@
+{
+  "slug": "2609-context-distraction",
+  "title": "Why More Context Makes AI Hallucinate (The Distraction Paradox) #shorts",
+  "badge": "SERVING & RETRIEVAL • PART 09",
+  "cover_title": "THE CONTEXT DISTRACTION PARADOX",
+  "caption": "Why does feeding MORE context to ChatGPT make it hallucinate? 🧠⚡\n\nIt’s called the Context Distraction Paradox.\n\nWhen building production RAG, dumping Top-10 chunks into your prompt often degrades generation:\n1️⃣ Attention Dilution: Self-attention weights must sum to 100% via Softmax. Adding noisy chunks mathematically dilutes the model's focus on verified facts.\n2️⃣ Lost in the Middle: LLMs suffer from U-shaped attention curves—retrieved facts buried in the middle third see an immediate performance drop of over 30%.\n3️⃣ The Production Fix: Run a Cross-Encoder re-ranker, apply strict score thresholds, and keep your context budget minimal by placing high-precision chunks at the prompt edges.\n\n📌 Save this architecture breakdown before deploying your next RAG pipeline!\n🚀 Follow @ai.transition (IG) & @ai.transition.official (YT) for weekly whiteboard system teardowns!\n\n[llm, rag, retrieval augmented generation, context window, softmax, self attention, machine learning, deep learning, artificial intelligence, software engineering, system design, ai infrastructure]",
+  "keywords": [
+    "rag",
+    "retrieval augmented generation",
+    "context distraction",
+    "lost in the middle",
+    "softmax",
+    "hallucinations",
+    "cross-encoder",
+    "system design"
+  ]
+}

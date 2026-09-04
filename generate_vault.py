@@ -31,6 +31,8 @@ Welcome to the **AI Architecture & Systems Engineering Vault**. This repository 
 * **[Part 06: KV Caching & The Memory Wall](./artifacts/2608-kv-caching/)**
 * **[Part 07: PagedAttention & vLLM Memory Paging](./artifacts/2608-paged-attention/)**
 * **[Part 08: Remote MCP Architecture & Measure.sh Teardown](./artifacts/2608-remote-mcp-architecture/)**
+* **[Part 09: The Context Distraction Paradox & RAG](./artifacts/2609-context-distraction/)**
+  * *Keywords:* Softmax Attention Dilution, "Lost in the Middle" Degradation, Parametric Memory Collisions, Cross-Encoder Re-ranking, Context Budgeting.
 
 ---
 
@@ -230,6 +232,35 @@ modules = [
             "badge": "APPLIED SYSTEMS • PART 08",
             "keywords": ["mcp", "model context protocol", "oauth2", "text-to-sql", "agents"]
         }
+    },
+    {
+        "slug": "2609-context-distraction",
+        "title": "Part 09: The Context Distraction Paradox & RAG",
+        "paradox": "Blindly stuffing massive retrieved context into prompts does not eliminate hallucinations; as sequence length and distractor noise scale, self-attention dispersion causes the model to suffer from \"Lost in the Middle\" degradation and override its own accurate parametric memory.",
+        "math": "- **Softmax Normalization Constraint (Zero-Sum Energy):**\n\n$$P(w_i) = \\frac{\\exp\\left(\\frac{q \\cdot k_i^T}{\\sqrt{d_k}}\\right)}{\\sum_{j=1}^{N} \\exp\\left(\\frac{q \\cdot k_j^T}{\\sqrt{d_k}}\\right)}, \\quad \\sum_{i=1}^{N} P(w_i) = 1.0$$\n\nRow-wise normalization forces token attention scores to strictly sum to $1.0$ ($100\\%$). Injecting irrelevant or redundant retrieved chunks inflates the denominator, systematically diluting the activation mass available for verified facts.\n\n- **\"Lost in the Middle\" Degradation:**\n\nPositional encoding decay and causal masking biases result in a U-shaped retention curve. Attention density drops by over $30\\%$ when target information is positioned within the middle third of the sequence window.\n\n- **Parametric vs. In-Context Conflict:**\n\nNoisy, partially relevant retrieval chunks cause dot-product attention to misalign with the static knowledge encoded in the Feed-Forward Network (FFN) weights, causing hallucinations that contradict both the prompt and factual truth.",
+        "tradeoffs": "- **Recall vs. Attention Signal-to-Noise Ratio (SNR):** Ingesting Top-10 chunks maximizes document recall but degrades the contextual signal entering self-attention heads.\n\n- **Prefill Latency & KV Cache Bloat:** Unfiltered multi-thousand-token context dumps increase Time-To-First-Token (TTFT) and expand dynamic VRAM cache footprint per concurrent user.",
+        "script": """[0:00 – 0:08] A-Roll: Talking Head
+\"Why does adding more context to your prompt actually make your AI hallucinate more? It's called the Context Distraction Paradox.\"
+
+[0:08 – 0:24] B-Roll: iPad Whiteboard (Panel 1)
+\"Most teams think RAG is simple: pull top 10 chunks and stuff them all in. But attention is a zero-sum game. Because Softmax forces attention scores across all tokens to sum to 100%, every irrelevant piece of noise mathematically dilutes focus on the verified fact.\"
+
+[0:24 – 0:42] B-Roll: iPad Whiteboard (Panel 2)
+\"Even worse is 'Lost in the Middle'. If the critical fact sits in the center of your prompt, attention drops by over 30%! The model gets distracted by surrounding noise, and conflicting text can even override its own correct internal memory.\"
+
+[0:42 – 0:54] B-Roll: iPad Whiteboard (Panel 3)
+\"In production, never blindly stuff context. Run a Cross-Encoder re-ranker, apply strict score thresholds, and inject only the top 1 or 2 facts at the very edges of the prompt.\"
+
+[0:54 – 0:59] A-Roll: Talking Head
+\"Save this architecture for your next RAG pipeline, and follow along!\"""",
+        "meta": {
+            "slug": "2609-context-distraction",
+            "title": "Why More Context Makes AI Hallucinate (The Distraction Paradox) #shorts",
+            "badge": "SERVING & RETRIEVAL • PART 09",
+            "cover_title": "THE CONTEXT DISTRACTION PARADOX",
+            "caption": "Why does feeding MORE context to ChatGPT make it hallucinate? 🧠⚡\n\nIt’s called the Context Distraction Paradox.\n\nWhen building production RAG, dumping Top-10 chunks into your prompt often degrades generation:\n1️⃣ Attention Dilution: Self-attention weights must sum to 100% via Softmax. Adding noisy chunks mathematically dilutes the model's focus on verified facts.\n2️⃣ Lost in the Middle: LLMs suffer from U-shaped attention curves—retrieved facts buried in the middle third see an immediate performance drop of over 30%.\n3️⃣ The Production Fix: Run a Cross-Encoder re-ranker, apply strict score thresholds, and keep your context budget minimal by placing high-precision chunks at the prompt edges.\n\n📌 Save this architecture breakdown before deploying your next RAG pipeline!\n🚀 Follow @ai.transition (IG) & @ai.transition.official (YT) for weekly whiteboard system teardowns!\n\n[llm, rag, retrieval augmented generation, context window, softmax, self attention, machine learning, deep learning, artificial intelligence, software engineering, system design, ai infrastructure]",
+            "keywords": ["rag", "retrieval augmented generation", "context distraction", "lost in the middle", "softmax", "hallucinations", "cross-encoder", "system design"]
+        }
     }
 ]
 
@@ -239,7 +270,8 @@ for m in modules:
     mod_dir.mkdir(exist_ok=True)
     
     # script.md
-    script_content = f"# {m['title']}\n\n### 1. 🎯 The 1-Sentence Production Paradox\n{m['paradox']}\n\n### 2. 🔬 Mathematical Invariants\n{m['math']}\n\n### 3. 📝 Master Spoken Script\n```text\n{m['script']}\n```\n"
+    tradeoffs = f"\n\n### 3. ⚙️ Production Trade-offs & Failure Modes\n{m['tradeoffs']}" if "tradeoffs" in m else ""
+    script_content = f"# {m['title']}\n\n### 1. 🎯 The 1-Sentence Production Paradox\n{m['paradox']}\n\n### 2. 🔬 Mathematical Invariants\n{m['math']}" + tradeoffs + f"\n\n### {4 if 'tradeoffs' in m else 3}. 📝 Master Spoken Script\n```text\n{m['script']}\n```\n"
     (mod_dir / "script.md").write_text(script_content)
     
     # meta.json
@@ -249,4 +281,4 @@ for m in modules:
     (mod_dir / "canvas.png").touch()
     (mod_dir / "master_cut.mp4").touch()
 
-print("✅ Complete AI Architecture Vault successfully scaffolded across all 8 modules!")
+print(f"✅ Complete AI Architecture Vault successfully scaffolded across all {len(modules)} modules!")

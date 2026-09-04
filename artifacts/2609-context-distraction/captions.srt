@@ -1,0 +1,151 @@
+1
+00:00:00,100 --> 00:00:01,800
+Why does adding <font color="#00FFFF"><b>more context</b></font>
+
+2
+00:00:01,800 --> 00:00:03,600
+to your prompt actually make
+
+3
+00:00:03,600 --> 00:00:05,400
+your AI <font color="#FF5252"><b>hallucinate more</b></font>?
+
+4
+00:00:05,400 --> 00:00:07,400
+It's called the
+
+5
+00:00:07,400 --> 00:00:10,200
+<font color="#00FFFF"><b>Context Distraction Paradox</b></font>.
+
+6
+00:00:10,300 --> 00:00:12,100
+Most teams think
+
+7
+00:00:12,100 --> 00:00:13,800
+<font color="#00FFFF"><b>RAG is simple</b></font>:
+
+8
+00:00:13,800 --> 00:00:15,600
+pull top 10 chunks
+
+9
+00:00:15,600 --> 00:00:17,400
+and stuff them all in.
+
+10
+00:00:17,400 --> 00:00:19,200
+But attention is a
+
+11
+00:00:19,200 --> 00:00:21,400
+<font color="#FFD700"><b>zero-sum game</b></font>.
+
+12
+00:00:21,400 --> 00:00:23,500
+Because <font color="#00FFFF"><b>Softmax</b></font> forces
+
+13
+00:00:23,500 --> 00:00:25,600
+attention scores across all tokens
+
+14
+00:00:25,600 --> 00:00:28,200
+to sum to <font color="#FFD700"><b>100%</b></font>,
+
+15
+00:00:28,200 --> 00:00:30,400
+every irrelevant piece of <font color="#FF5252"><b>noise</b></font>
+
+16
+00:00:30,400 --> 00:00:33,000
+mathematically <font color="#FF5252"><b>dilutes focus</b></font>
+
+17
+00:00:33,000 --> 00:00:35,500
+on the verified fact.
+
+18
+00:00:35,600 --> 00:00:37,800
+Even worse is
+
+19
+00:00:37,800 --> 00:00:40,200
+<font color="#FF5252"><b>"Lost in the Middle"</b></font>.
+
+20
+00:00:40,200 --> 00:00:42,200
+If the critical fact sits
+
+21
+00:00:42,200 --> 00:00:44,500
+in the center of your prompt,
+
+22
+00:00:44,500 --> 00:00:46,800
+attention drops by
+
+23
+00:00:46,800 --> 00:00:49,500
+<font color="#FF5252"><b>over 30%</b></font>!
+
+24
+00:00:49,600 --> 00:00:51,800
+The model gets distracted
+
+25
+00:00:51,800 --> 00:00:53,800
+by surrounding noise,
+
+26
+00:00:53,800 --> 00:00:55,800
+and conflicting text can even
+
+27
+00:00:55,800 --> 00:00:57,800
+<font color="#FF5252"><b>override</b></font> its own correct
+
+28
+00:00:57,800 --> 00:01:00,200
+internal memory.
+
+29
+00:01:00,300 --> 00:01:02,200
+In production,
+
+30
+00:01:02,200 --> 00:01:04,400
+never blindly stuff context.
+
+31
+00:01:04,400 --> 00:01:06,800
+Run a <font color="#00FFFF"><b>Cross-Encoder re-ranker</b></font>,
+
+32
+00:01:06,800 --> 00:01:09,200
+apply strict score thresholds,
+
+33
+00:01:09,200 --> 00:01:11,500
+and inject only the top
+
+34
+00:01:11,500 --> 00:01:13,800
+1 or 2 facts
+
+35
+00:01:13,800 --> 00:01:16,200
+at the <font color="#00FF00"><b>very edges</b></font> of the prompt.
+
+36
+00:01:16,300 --> 00:01:18,500
+Save this architecture for your
+
+37
+00:01:18,500 --> 00:01:20,500
+next <font color="#00FFFF"><b>RAG pipeline</b></font>,
+
+38
+00:01:20,500 --> 00:01:22,800
+and <font color="#FFD700"><b>follow along</b></font>!
