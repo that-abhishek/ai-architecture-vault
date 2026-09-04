@@ -1,8 +1,8 @@
 # AI Architecture & Systems Engineering Vault 🧠⚡
-> Open-Source First-Principles Curriculum & Production Systems Engineering Blueprints
+> Open-Source First-Principles Notes & Production Systems Engineering Breakdowns
 > Maintained by [@ai.transition](https://instagram.com/ai.transition)
 
-Welcome to the **AI Architecture & Systems Engineering Vault**. This repository houses complete mathematical derivations, visual architecture schematics, teleprompter scripts, and production trade-offs for foundation model mechanics and distributed AI serving infrastructure.
+Welcome to the **AI Architecture & Systems Engineering Vault**. This repository holds the material behind each [@ai.transition](https://instagram.com/ai.transition) episode — the core formula, whiteboard schematic, and teleprompter script for foundation model mechanics and distributed AI serving infrastructure. Some parts go deeper into production trade-offs and failure modes; all of them are first-principles, short, and built to be read alongside the video.
 
 ---
 
