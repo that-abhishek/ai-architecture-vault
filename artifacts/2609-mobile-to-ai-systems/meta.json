@@ -1,0 +1,20 @@
+{
+  "slug": "2609-mobile-to-ai-systems",
+  "title": "Mobile Engineers Already Understand AI Infrastructure (Here's Proof) #shorts",
+  "badge": "SERVING & CAREER • PART 10",
+  "cover_title": "MOBILE SYSTEMS → AI SYSTEMS",
+  "caption": "Mobile engineer intimidated by AI? You already understand most of AI serving infrastructure. 🧠⚡\n\nProduction AI isn't a Python API call — it's an operating systems problem:\n1️⃣ Low-Memory Killers → Preemption: when a GPU runs out of KV cache, the serving engine evicts a request exactly like the OS kills your backgrounded app.\n2️⃣ Virtual Memory Paging → PagedAttention: same page tables, same fix for fragmentation.\n3️⃣ 16ms Frame Budget → Time-to-First-Token: a hard budget the user can feel, and profiling until you find where it went.\n4️⃣ Reactive Streams & Retry State Machines → Token Streaming & Model Fallbacks.\n5️⃣ On-Device (ExecuTorch, CoreML, NPUs): your constraint intuition is the advantage. Backend folks are catching up here.\n\nThe real gap: non-deterministic outputs, embeddings, and cost-per-call as a design constraint. Learnable.\n\n📌 Share this with a mobile engineer who feels late.\n🚀 Grab the open-source Vault in bio & follow @ai.transition (IG) / @ai.transition.official (YT)!\n\n[mobile engineering, android, ios, ai engineering, llm serving, kv cache, pagedattention, vllm, time to first token, on-device ai, coreml, executorch, system design, ai infrastructure, career transition]",
+  "keywords": [
+    "mobile engineering",
+    "ai engineering",
+    "kv cache preemption",
+    "pagedattention",
+    "time to first token",
+    "token streaming",
+    "on-device inference",
+    "executorch",
+    "coreml",
+    "career transition",
+    "system design"
+  ]
+}
