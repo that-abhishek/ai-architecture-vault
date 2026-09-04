@@ -23,6 +23,8 @@ Welcome to the **AI Architecture & Systems Engineering Vault**. This repository 
 * **[Part 08: Remote MCP Architecture & Measure.sh Teardown](./artifacts/2608-remote-mcp-architecture/)**
 * **[Part 09: The Context Distraction Paradox & RAG](./artifacts/2609-context-distraction/)**
   * *Keywords:* Softmax Attention Dilution, "Lost in the Middle" Degradation, Parametric Memory Collisions, Cross-Encoder Re-ranking, Context Budgeting.
+* **[Part 10: Mobile Systems → AI Systems](./artifacts/2609-mobile-to-ai-systems/)**
+  * *Keywords:* LMK ↔ KV Cache Preemption, Virtual Memory ↔ PagedAttention, 16ms Frame Budget ↔ TTFT, Reactive Streams ↔ Token Streaming, On-Device Inference (ExecuTorch / CoreML / NPUs).
 
 ---
 
