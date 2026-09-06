@@ -25,6 +25,8 @@ Welcome to the **AI Architecture & Systems Engineering Vault**. This repository 
   * *Keywords:* Softmax Attention Dilution, "Lost in the Middle" Degradation, Parametric Memory Collisions, Cross-Encoder Re-ranking, Context Budgeting.
 * **[Part 10: Mobile Systems → AI Systems](./artifacts/2609-mobile-to-ai-systems/)**
   * *Keywords:* LMK ↔ KV Cache Preemption, Virtual Memory ↔ PagedAttention, 16ms Frame Budget ↔ TTFT, Reactive Streams ↔ Token Streaming, On-Device Inference (ExecuTorch / CoreML / NPUs).
+* **[Part 11: Prompt Injection — No Patch, Just Blast Radius](./artifacts/2609-promp-injection/)**
+  * *Keywords:* One-String Context (No Privilege Boundary), SQL Parameterization vs. No-Grammar LLMs, Blacklist Futility, Indirect Injection, Least-Privilege Tools, Human-in-the-Loop Confirmation, Dual-LLM (Privileged / Quarantined) Pattern.
 
 ---
 
