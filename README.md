@@ -27,6 +27,8 @@ Welcome to the **AI Architecture & Systems Engineering Vault**. This repository 
   * *Keywords:* LMK ↔ KV Cache Preemption, Virtual Memory ↔ PagedAttention, 16ms Frame Budget ↔ TTFT, Reactive Streams ↔ Token Streaming, On-Device Inference (ExecuTorch / CoreML / NPUs).
 * **[Part 11: Prompt Injection — No Patch, Just Blast Radius](./artifacts/2609-promp-injection/)**
   * *Keywords:* One-String Context (No Privilege Boundary), SQL Parameterization vs. No-Grammar LLMs, Blacklist Futility, Indirect Injection, Least-Privilege Tools, Human-in-the-Loop Confirmation, Dual-LLM (Privileged / Quarantined) Pattern.
+* **[Part 12: Summarising Your Agent's History Can Triple Your Bill](./artifacts/2609-conversation-cost/)**
+  * *Keywords:* Stateless API & Quadratic Conversation Cost, Cache Read vs. Write Economics, Prefix-Structured Invalidation, Rolling-Summary Trap (Re-compression), Breakpoint Placement, Boundary Compaction.
 
 ---
 
@@ -37,4 +39,4 @@ Every topic directory contains:
 2. `meta.json` — Publishing title, badge, caption, and semantic keywords.
 3. `master_cut.mov` / `master_cut.mp4` — Final rendered reference video cut.
 
-Where available: `canvas.png` (vertical iPad whiteboard diagram) and `captions.srt` (styled subtitle track).
+Where available: `canvas.png` / `canvas.jpg` (vertical iPad whiteboard diagram) and `captions.srt` (styled subtitle track).

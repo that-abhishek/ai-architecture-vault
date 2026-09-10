@@ -1,3 +1,6 @@
 .DS_Store
 metrics/
 artifacts/*/metrics.json
+_drafts/
+_to_delete/
+Claude outputs/
