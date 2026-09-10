@@ -1,0 +1,215 @@
+1
+00:00:00,400 --> 00:00:02,243
+So… you summarised your agent's
+
+2
+00:00:02,293 --> 00:00:04,505
+<font color="#00FFFF"><b>conversation history</b></font> hoping it'd save money.
+
+3
+00:00:04,555 --> 00:00:06,155
+And your bill just <font color="#FF5252"><b>tripled</b></font>.
+
+4
+00:00:06,205 --> 00:00:08,785
+Here's the thing — APIs are <font color="#00FFFF"><b>stateless</b></font>.
+
+5
+00:00:08,835 --> 00:00:10,309
+The model doesn't remember.
+
+6
+00:00:10,359 --> 00:00:12,571
+You send your entire <font color="#00FFFF"><b>conversation history</b></font>
+
+7
+00:00:12,621 --> 00:00:14,096
+in every single request.
+
+8
+00:00:14,146 --> 00:00:15,251
+Compounding every turn.
+
+9
+00:00:15,301 --> 00:00:18,250
+So twenty messages, a thousand tokens each —
+
+10
+00:00:18,300 --> 00:00:20,512
+you didn't send twenty thousand tokens.
+
+11
+00:00:20,562 --> 00:00:22,062
+You sent <font color="#FF5252"><b>two hundred and ten thousand</b></font>.
+
+12
+00:00:22,112 --> 00:00:25,061
+And the only reason that doesn't bankrupt you
+
+13
+00:00:25,111 --> 00:00:28,797
+is that most of it is identical to last time,
+
+14
+00:00:28,847 --> 00:00:31,059
+so it comes back from <font color="#00FFFF"><b>cache</b></font>
+
+15
+00:00:31,109 --> 00:00:33,689
+at about a tenth of the price.
+
+16
+00:00:33,739 --> 00:00:37,057
+<font color="#FFD700"><b>One:</b></font> your bill isn't the length of the conversation.
+
+17
+00:00:37,107 --> 00:00:38,507
+It's how much of it you're <font color="#FFD700"><b>recomputing</b></font>.
+
+18
+00:00:38,557 --> 00:00:40,400
+Now your conversation gets bigger.
+
+19
+00:00:40,450 --> 00:00:43,030
+So you do the obvious thing —
+
+20
+00:00:43,080 --> 00:00:44,923
+you keep a <font color="#00FFFF"><b>running summary</b></font>.
+
+21
+00:00:44,973 --> 00:00:47,922
+Every turn, you squash the old history down
+
+22
+00:00:47,972 --> 00:00:49,446
+to keep it small.
+
+23
+00:00:49,496 --> 00:00:51,096
+And that's the <font color="#FF5252"><b>trap</b></font>.
+
+24
+00:00:51,146 --> 00:00:53,358
+Because each turn, the summary absorbs
+
+25
+00:00:53,408 --> 00:00:54,514
+one more message.
+
+26
+00:00:54,564 --> 00:00:56,776
+So it's different text every time.
+
+27
+00:00:56,826 --> 00:00:58,669
+Different text, different <font color="#00FFFF"><b>prefix</b></font> —
+
+28
+00:00:58,719 --> 00:01:01,299
+and a different prefix is a <font color="#FF5252"><b>miss</b></font>.
+
+29
+00:01:01,349 --> 00:01:03,929
+So you <font color="#FF5252"><b>never get a hit</b></font>. Ever.
+
+30
+00:01:03,979 --> 00:01:07,665
+Those turns were costing you a tenth of the price,
+
+31
+00:01:07,715 --> 00:01:11,401
+and now you're paying <font color="#FF5252"><b>more than full price</b></font> for them,
+
+32
+00:01:11,451 --> 00:01:12,926
+on every single request.
+
+33
+00:01:12,976 --> 00:01:15,556
+<font color="#FFD700"><b>Two:</b></font> it's not compression that costs you.
+
+34
+00:01:15,606 --> 00:01:16,343
+It's <font color="#FF5252"><b>re-compression</b></font>.
+
+35
+00:01:16,393 --> 00:01:17,793
+Half the tokens, <font color="#FF5252"><b>three times the bill</b></font>.
+
+36
+00:01:17,843 --> 00:01:19,143
+So don't rewrite. <font color="#FFD700"><b>Append</b></font>.
+
+37
+00:01:19,193 --> 00:01:22,511
+Everything that never changes goes at the front —
+
+38
+00:01:22,561 --> 00:01:25,141
+your <font color="#00FFFF"><b>tools</b></font>, your <font color="#00FFFF"><b>system prompt</b></font>, your <font color="#00FFFF"><b>documents</b></font>.
+
+39
+00:01:25,191 --> 00:01:26,297
+Then the history.
+
+40
+00:01:26,347 --> 00:01:28,190
+Then the new message, last.
+
+41
+00:01:28,240 --> 00:01:30,452
+And your cache <font color="#00FFFF"><b>breakpoint</b></font> goes on
+
+42
+00:01:30,502 --> 00:01:32,714
+the last thing that doesn't move.
+
+43
+00:01:32,764 --> 00:01:34,607
+You grow to the right.
+
+44
+00:01:34,657 --> 00:01:36,500
+You never touch the left.
+
+45
+00:01:36,550 --> 00:01:39,130
+And when the window genuinely fills up,
+
+46
+00:01:39,180 --> 00:01:40,654
+you <font color="#FFD700"><b>compact once</b></font> —
+
+47
+00:01:40,704 --> 00:01:42,916
+that summary becomes your new <font color="#00FFFF"><b>prefix</b></font>,
+
+48
+00:01:42,966 --> 00:01:45,178
+and it caches from there on.
+
+49
+00:01:45,228 --> 00:01:45,965
+Same technique.
+
+50
+00:01:46,015 --> 00:01:48,227
+It's the frequency that changes everything.
+
+51
+00:01:48,277 --> 00:01:49,751
+<font color="#FFD700"><b>Three:</b></font> compact at <font color="#FFD700"><b>boundaries</b></font>,
+
+52
+00:01:49,801 --> 00:01:51,101
+never <font color="#FF5252"><b>mid-flight</b></font>.
+
+53
+00:01:51,151 --> 00:01:54,100
+Full arithmetic's in the <font color="#FFD700"><b>vault</b></font>, <font color="#FFD700"><b>link in bio</b></font>.
+
+54
+00:01:54,150 --> 00:01:55,550
+<font color="#FFD700"><b>Follow along for the series</b></font>.
