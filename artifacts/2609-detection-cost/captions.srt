@@ -1,0 +1,127 @@
+1
+00:00:00,040 --> 00:00:02,240
+So… your agent returned a <font color="#FF5252"><b>wrong answer</b></font>.
+
+2
+00:00:02,500 --> 00:00:04,520
+But the status is <font color="#FF5252"><b>200</b></font>.
+
+3
+00:00:04,700 --> 00:00:06,120
+The JSON is <font color="#FF5252"><b>valid</b></font>.
+
+4
+00:00:06,420 --> 00:00:07,600
+And the retry logic
+
+5
+00:00:07,960 --> 00:00:08,840
+<font color="#FF5252"><b>never triggered</b></font>.
+
+6
+00:00:09,060 --> 00:00:10,900
+Every retry you've written
+
+7
+00:00:10,940 --> 00:00:12,980
+assumes the failure <font color="#00FFFF"><b>announces itself</b></font>.
+
+8
+00:00:13,300 --> 00:00:14,800
+A <font color="#00FFFF"><b>hallucination</b></font> returns <font color="#4ADE80"><b>success</b></font>.
+
+9
+00:00:15,000 --> 00:00:16,260
+Right shape.
+
+10
+00:00:16,480 --> 00:00:17,380
+<font color="#FF5252"><b>Wrong content</b></font>.
+
+11
+00:00:17,640 --> 00:00:18,360
+<font color="#FF5252"><b>Nothing to catch</b></font>.
+
+12
+00:00:18,860 --> 00:00:19,300
+<font color="#FFD700"><b>Rule one.</b></font>
+
+13
+00:00:19,440 --> 00:00:21,200
+The failure <font color="#FFD700"><b>looks like a success</b></font>.
+
+14
+00:00:21,560 --> 00:00:22,320
+Building agents? Follow —
+
+15
+00:00:22,720 --> 00:00:24,100
+this is the layer.
+
+16
+00:00:24,360 --> 00:00:25,100
+Everywhere else,
+
+17
+00:00:25,440 --> 00:00:26,500
+spotting the failure was <font color="#4ADE80"><b>free</b></font>.
+
+18
+00:00:26,680 --> 00:00:28,840
+The <font color="#00FFFF"><b>exception</b></font> arrives on its own.
+
+19
+00:00:29,100 --> 00:00:32,140
+Here, only <font color="#00FFFF"><b>another model call</b></font> knows it's wrong.
+
+20
+00:00:32,400 --> 00:00:34,150
+<font color="#FF5252"><b>Cost of checking</b></font>
+
+21
+00:00:34,190 --> 00:00:35,380
+is equal to <font color="#FF5252"><b>cost of producing</b></font>.
+
+22
+00:00:35,620 --> 00:00:37,600
+<font color="#FFD700"><b>Rule two.</b></font> Detection has a <font color="#FFD700"><b>minimum cost</b></font>
+
+23
+00:00:37,780 --> 00:00:38,580
+<font color="#FFD700"><b>attached to it.</b></font>
+
+24
+00:00:38,800 --> 00:00:40,140
+Don't ask — <font color="#FF5252"><b>is this true?</b></font>
+
+25
+00:00:40,400 --> 00:00:41,920
+That's the <font color="#FF5252"><b>expensive</b></font> question.
+
+26
+00:00:42,220 --> 00:00:44,000
+Ask whether every id and number
+
+27
+00:00:44,040 --> 00:00:45,820
+<font color="#00FFFF"><b>came from the input</b></font>.
+
+28
+00:00:46,020 --> 00:00:47,300
+A <font color="#00FFFF"><b>string operation</b></font>.
+
+29
+00:00:47,540 --> 00:00:49,920
+It's <font color="#4ADE80"><b>free</b></font>.
+
+30
+00:00:50,360 --> 00:00:52,720
+And it catches <font color="#4ADE80"><b>invented objects</b></font>.
+
+31
+00:00:52,920 --> 00:00:55,200
+<font color="#FFD700"><b>Rule three.</b></font> <font color="#FFD700"><b>Ground for free.</b></font>
+
+32
+00:00:55,440 --> 00:00:57,580
+Buy truth only where it's <font color="#FFD700"><b>irreversible</b></font>.

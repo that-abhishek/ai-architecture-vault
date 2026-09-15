@@ -4,3 +4,5 @@ artifacts/*/metrics.json
 _drafts/
 _to_delete/
 Claude outputs/
+__pycache__/
+*.pyc
