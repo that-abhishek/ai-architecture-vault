@@ -29,6 +29,8 @@ Welcome to the **AI Architecture & Systems Engineering Vault**. This repository 
   * *Keywords:* One-String Context (No Privilege Boundary), SQL Parameterization vs. No-Grammar LLMs, Blacklist Futility, Indirect Injection, Least-Privilege Tools, Human-in-the-Loop Confirmation, Dual-LLM (Privileged / Quarantined) Pattern.
 * **[Part 12: Summarising Your Agent's History Can Triple Your Bill](./artifacts/2609-conversation-cost/)**
   * *Keywords:* Stateless API & Quadratic Conversation Cost, Cache Read vs. Write Economics, Prefix-Structured Invalidation, Rolling-Summary Trap (Re-compression), Breakpoint Placement, Boundary Compaction.
+* **[Part 13: Your Agent's Errors Return 200](./artifacts/2609-detection-cost/)**
+  * *Keywords:* Success-Shaped Failure (No Exception to Catch), Inert Retry Semantics, Detection Cost Floor (Check ≈ Produce), Truth vs. Provenance, Grounding Assertions for Invention, Schema vs. Semantic Checks, Irreversibility as the Verification Budget, Mutation Testing Non-Deterministic Output.
 
 ---
 
