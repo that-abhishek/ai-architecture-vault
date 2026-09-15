@@ -1,8 +1,40 @@
+# ─── OS ───────────────────────────────────────────────────────────────
 .DS_Store
-metrics/
-artifacts/*/metrics.json
+Thumbs.db
+
+# ─── Private: internal / client work, never publish ───────────────────
+# Workshop material is internal training content and names a real employer.
+workshops/
+
+# ─── Private: working files ───────────────────────────────────────────
 _drafts/
 _to_delete/
 Claude outputs/
+
+# ─── Private: channel performance data ────────────────────────────────
+metrics/
+artifacts/*/metrics.json
+
+# ─── Secrets ──────────────────────────────────────────────────────────
+.env
+.env.*
+*.key
+*.pem
+*.p12
+credentials*.json
+secrets*.json
+
+# ─── Raw capture & editor projects (large, not deliverables) ──────────
+raw/
+*WEBCAM*
+*.fcpbundle
+*.drp
+*.braw
+proxies/
+Render Cache*/
+
+# ─── Python ───────────────────────────────────────────────────────────
 __pycache__/
 *.pyc
+.venv/
+venv/
