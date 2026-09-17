@@ -1,0 +1,155 @@
+1
+00:00:00,200 --> 00:00:02,945
+so... you ask an AI assistant which laptop to buy.
+
+2
+00:00:02,995 --> 00:00:04,204
+It names one.
+
+3
+00:00:04,254 --> 00:00:07,159
+Now — how did *that* laptop get in there?
+
+4
+00:00:07,209 --> 00:00:08,617
+There are <font color="#00FFFF">four placements</font>.
+
+5
+00:00:08,667 --> 00:00:11,193
+And the <font color="#FFD700">sponsored label</font> is on exactly one.
+
+6
+00:00:11,243 --> 00:00:13,429
+On Google, the laptop ad is a <font color="#4ADE80">slot</font>.
+
+7
+00:00:13,479 --> 00:00:16,644
+Top of the page, with a <font color="#FFD700">visual label</font> on it.
+
+8
+00:00:16,694 --> 00:00:19,081
+Half of people still miss the label.
+
+9
+00:00:19,131 --> 00:00:20,798
+An AI response has none.
+
+10
+00:00:20,848 --> 00:00:25,313
+But the slot is a <font color="#4ADE80">thing</font>. It has an edge.
+
+11
+00:00:25,363 --> 00:00:27,690
+Move it. Remove it. Don't click it.
+
+12
+00:00:27,790 --> 00:00:29,790
+<font color="#FFD700">RULE ONE: a label works on a slot. Not on a sentence.</font>
+
+13
+00:00:29,740 --> 00:00:33,205
+In a chat there are <font color="#00FFFF">four placements</font> for that laptop.
+
+14
+00:00:33,255 --> 00:00:37,859
+A <font color="#4ADE80">slot under the answer</font> — the model never sees it.
+
+15
+00:00:37,909 --> 00:00:41,495
+<font color="#00FFFF">The list</font> — the laptop sits inside the recommendations.
+
+16
+00:00:41,545 --> 00:00:43,313
+<font color="#FF5252">The laptop's page</font>, retrieved.
+
+17
+00:00:43,363 --> 00:00:46,788
+And the <font color="#FF5252">system prompt</font> — the operator's words, not yours.
+
+18
+00:00:46,838 --> 00:00:49,303
+Every placement <font color="#4ADE80">except the separate slot</font> <font color="#FF5252">changes the answer</font>.
+
+19
+00:00:49,353 --> 00:00:53,916
+One line in the system prompt — <font color="#FF5252">eighteen of twenty-three</font> models picked the sponsored laptop.
+
+20
+00:00:53,966 --> 00:00:55,034
+At <font color="#FF5252">twice the price</font>.
+
+21
+00:00:55,084 --> 00:00:57,511
+Part 11 called this <font color="#FF5252">prompt injection</font>.
+
+22
+00:00:57,561 --> 00:01:00,585
+Same mechanism — this time the operator is the one injecting.
+
+23
+00:01:00,635 --> 00:01:01,424
+And the label?
+
+24
+00:01:01,474 --> 00:01:04,500
+Labelled, the sponsored pick still won <font color="#FF5252">fifty-five</font> percent.
+
+25
+00:01:04,550 --> 00:01:05,379
+Unlabelled, <font color="#FF5252">sixty-one</font>.
+
+26
+00:01:05,429 --> 00:01:06,817
+On Google — <font color="#4ADE80">twenty-two</font>.
+
+27
+00:01:06,867 --> 00:01:09,752
+<font color="#FFD700">RULE TWO: past the slot, the label stops working.</font>
+
+28
+00:01:09,802 --> 00:01:13,665
+Can you tell? <font color="#FF5252">Under ten percent</font>, when the model is told to be subtle.
+
+29
+00:01:13,715 --> 00:01:16,460
+Half of people miss an ad even when it's disclosed.
+
+30
+00:01:16,510 --> 00:01:20,594
+And no regulator has a rule for an ad that isn't a thing.
+
+31
+00:01:20,644 --> 00:01:23,330
+One check works. Same question, <font color="#4ADE80">sponsor removed</font>.
+
+32
+00:01:23,380 --> 00:01:25,208
+Different laptop? That's the placement.
+
+33
+00:01:25,258 --> 00:01:30,380
+Building an assistant? That <font color="#4ADE80">diff</font> is a list and a replay, written before the slot exists.
+
+34
+00:01:30,430 --> 00:01:33,215
+Using one? <font color="#4ADE80">Ask twice</font> — two assistants, same question.
+
+35
+00:01:33,265 --> 00:01:39,170
+Not proof. But it's the only check on your side.
+
+36
+00:01:39,220 --> 00:01:44,562
+<font color="#FFD700">RULE THREE: the only check is a diff. Build it before the slot — or ask twice.</font>
+
+37
+00:01:44,612 --> 00:01:48,197
+<font color="#FFD700">Product track, part one — it stands on Part 11.</font>
+
+38
+00:01:48,247 --> 00:01:51,472
+<font color="#FFD700">The one-page list is in the vault, link in bio.</font>
+
+39
+00:01:51,522 --> 00:01:52,590
+<font color="#FFD700">Follow for both tracks.</font>
