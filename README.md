@@ -32,6 +32,13 @@ Welcome to the **AI Architecture & Systems Engineering Vault**. This repository 
 * **[Part 13: Your Agent's Errors Return 200](./artifacts/2609-detection-cost/)**
   * *Keywords:* Success-Shaped Failure (No Exception to Catch), Inert Retry Semantics, Detection Cost Floor (Check ≈ Produce), Truth vs. Provenance, Grounding Assertions for Invention, Schema vs. Semantic Checks, Irreversibility as the Verification Budget, Mutation Testing Non-Deterministic Output.
 
+### Track 2 — AI Product (runs alongside Track 1; part numbers stay cumulative)
+Product seen from the room where "what gets built" is decided. Same rule: one visual blueprint per part. Test for the track: if acting on the takeaway changes code inside a system already decided on, it's engineering; if it changes what gets built, or whether, it's product. Same gates as Track 1 — an aha, something countable, a drawable mechanism, survives model progress — and every product part names the engineering part it stands on.
+
+* **[Part 14: Four Placements, One Label](./artifacts/2609-ads-in-the-answer/)**
+  * *Stands on:* Part 11 (prompt injection — same mechanism, commercial payload, operator as injector).
+  * *Keywords:* Slot vs. Sentence (a Label Needs a Thing), Four Placements (UI Slot, Recommendation List, Retrieved Page, System Prompt), Label Efficacy (61 → 55 vs. 22), Prompt-Level Commercial Steering (18 of 23 Models), Reader Undetectability, Counterfactual Diff as the Only Control (Build It, or Ask Twice), The "Never Paid to Say" Contract.
+
 ---
 
 ## 🛠️ Directory Standard

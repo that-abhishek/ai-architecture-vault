@@ -1,0 +1,39 @@
+{
+  "slug": "2609-ads-in-the-answer",
+  "track": "product",
+  "title": "How a Product Gets Into an AI Assistant's Answer — Four Placements, One Label #shorts",
+  "badge": "PRODUCT • PART 14",
+  "cover_title": "ADS IN AI — PRODUCT TRACK · PART ONE",
+  "cover_title_alt": "A LABEL WORKS ON A SLOT. NOT ON A SENTENCE.",
+  "caption": "Ads in AI assistants — where they actually go, and why the \"Sponsored\" label doesn't work in a chat.\nAI Product · Part 14 · first of three. Stands on Part 11 (prompt injection).\n\nYou ask an AI assistant which laptop to buy. It names one. How did that laptop get in there? Four placements. The sponsored label covers exactly one.\n\nIn search, an ad is a slot — top of the page, visual label on it. Half of people still miss the label. An AI response has none. But a slot is a thing: move it, remove it, don't click it. A label works on a slot, not on a sentence.\n\nFour placements for sponsored content in an AI chatbot answer:\n① a slot under the answer — separate system, the model never sees it\n② the list — the sponsored product sits inside the recommendations\n③ the retrieved page\n④ the system prompt — the operator's words, not yours\n\nEvery placement except the separate slot changes the answer. One line in the system prompt — a suggestion, not an order — and 18 of 23 models picked the sponsored product more than half the time, at twice the price. Same mechanism as prompt injection; this time the operator is the one injecting.\n\nThe label: in a preregistered experiment (2,012 people, real catalogue), a sponsored recommendation inside a chat won 61%. Add the word \"Sponsored\" — still 55%. A sponsored slot in search: 22%. The label did six points of work. The sentence did thirty-nine.\n\nCan you tell? Under 10% when the model is told to be subtle. Half of people miss an ad even when it's disclosed. And no advertising regulator — India, US, EU — has a rule for an ad that isn't a discrete unit.\n\nOne check works. Same question, sponsor removed. Different answer? That's the placement.\n\nBuilding an AI assistant? That diff is a written list of what the model is never paid to say, plus a replay that runs it — before the ad slot exists.\nUsing one? Ask twice — two assistants, same question. Not proof, but the only check on your side.\n\nOne-page template in the open vault. Link in bio.\n\nPart 14 · AI product track · follow for both tracks.\n\n#adsinai #aiads #aiassistant #aichatbot #aiproduct #productmanagement #aiengineering #llm #promptinjection #generativeai #systemdesign #techleadership",
+  "keywords": [
+    "ads in ai assistants",
+    "sponsored content llm",
+    "ai product decisions",
+    "generative engine optimization",
+    "llm recommendation bias",
+    "system prompt commercial influence",
+    "native advertising disclosure",
+    "counterfactual evaluation",
+    "ai assistant monetization",
+    "conversational search ads"
+  ],
+  "experiment": {
+    "id": "E2",
+    "variable": "track: first of three consecutive AI Product parts; structure, hook shape and runtime band held at Part 13 settings. Follow ask moved back to the end card (Part 13's mid-roll ask got 0 follows) — a second variable, acknowledged",
+    "hypothesis": "a product part holds the engineering audience — retention and follow rate at or above the engineering baseline — so the page can carry two tracks without losing the first",
+    "metric": "retention_pct (avg_watch_time_s / runtime_s) and follows_per_1000_viewers; day-7 views as the category check",
+    "baseline": "retention 20% (Parts 12, 13); follows/1,000 ~7–9 (Parts 11–12; Part 13: 0); day-7 views ~1,700 typical (Part 13: 398)",
+    "win": "trio average retention >=25% AND follows/1,000 >=9; per-part read at day 7, decision on the trio",
+    "result": null,
+    "decision": null,
+    "notes": "Supersedes the planned E2 (reply CTA) in Claude outputs/reel-experiments.md; that variable is parked. Lose → product parts alternate with engineering instead of running consecutive, and the name field stays 'AI Engineering'. Win → name field becomes 'AI Engineering & Product' after part 16 and a PRODUCT highlight is created. Category check: if this part lands below Part 13 on views AND follows, the topic is the problem, not the track. Follows/1,000 is read knowing the CTA position also changed vs Part 13; compare against Parts 11–12 (end-card asks) for that metric. Guards: same gates as engineering parts; every product part names the engineering part it stands on (this one: Part 11)."
+  },
+  "vault_artifact": "commercial-context-contract.md — the one-page 'never paid to say' list and replay spec the CTA points to",
+  "sources": "Claude outputs/part14-ads-research.md — every number on the board, with confidence flags",
+  "runtime": "1:53",
+  "published": null,
+  "alt_text": "Handwritten whiteboard showing four placements for sponsored content in an AI assistant's answer — slot, list, retrieved page, system prompt — and why a Sponsored label works on a slot but not on a sentence.",
+  "stands_on": "Part 11 — 2609-promp-injection (prompt injection: text in the context steers the output; here the payload is commercial and the injector is the operator)",
+  "production_notes": "Rule one was not spoken in the shoot; shipped as a 2 s board-only gold title card after card 3 (captions.srt cue 12). Captions aligned by speech-run detection, then nudged in the edit."
+}
