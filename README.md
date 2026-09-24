@@ -31,6 +31,9 @@ Welcome to the **AI Architecture & Systems Engineering Vault**. This repository 
   * *Keywords:* Stateless API & Quadratic Conversation Cost, Cache Read vs. Write Economics, Prefix-Structured Invalidation, Rolling-Summary Trap (Re-compression), Breakpoint Placement, Boundary Compaction.
 * **[Part 13: Your Agent's Errors Return 200](./artifacts/2609-detection-cost/)**
   * *Keywords:* Success-Shaped Failure (No Exception to Catch), Inert Retry Semantics, Detection Cost Floor (Check ≈ Produce), Truth vs. Provenance, Grounding Assertions for Invention, Schema vs. Semantic Checks, Irreversibility as the Verification Budget, Mutation Testing Non-Deterministic Output.
+* **[Part 15: $33,000 to Say Yes](./artifacts/2609-one-word-judge/)**
+  * *Stands on:* Part 13 (detection cost — the check costs about as much as the work).
+  * *Keywords:* LLM-as-Judge Cost ($33,000 vs. $160 per 1M Checks), Jev (TypeSafe AI) as the First System One Model, Typed Boxes with a Probability per Option, Confidence-Threshold Routing (Ship / Human Review), Frontier vs. Cheap Open Model vs. Decision Model, Forced-Choice Failure (0 of 30 Out-of-Scope Flagged), The "None of These" Box.
 
 ### Track 2 — AI Product (runs alongside Track 1; part numbers stay cumulative)
 Product seen from the room where "what gets built" is decided. Same rule: one visual blueprint per part. Test for the track: if acting on the takeaway changes code inside a system already decided on, it's engineering; if it changes what gets built, or whether, it's product. Same gates as Track 1 — an aha, something countable, a drawable mechanism, survives model progress — and every product part names the engineering part it stands on.
