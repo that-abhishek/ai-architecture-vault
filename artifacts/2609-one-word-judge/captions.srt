@@ -1,0 +1,196 @@
+1
+00:00:00,050 --> 00:00:03,190
+Your app sends out a million AI answers.
+
+2
+00:00:03,190 --> 00:00:04,680
+Before each one ships,
+
+3
+00:00:04,680 --> 00:00:07,880
+a second model reads it and says <font color="#00FFFF">yes or no</font>.
+
+4
+00:00:07,880 --> 00:00:10,580
+At frontier prices, that one word
+
+5
+00:00:10,580 --> 00:00:13,390
+costs you <font color="#FF5252">$33,000</font>.
+
+6
+00:00:13,390 --> 00:00:14,260
+You are <font color="#00FFFF">the judge</font>.
+
+7
+00:00:14,260 --> 00:00:16,180
+An answer comes in with its source,
+
+8
+00:00:16,180 --> 00:00:19,050
+and you check whether it stays inside the source.
+
+9
+00:00:19,050 --> 00:00:20,710
+You run on a <font color="#FF5252">frontier model</font>,
+
+10
+00:00:20,710 --> 00:00:23,200
+so you pay frontier price for <font color="#FF5252">one word</font>.
+
+11
+00:00:23,200 --> 00:00:24,610
+There are two problems.
+
+12
+00:00:24,610 --> 00:00:27,440
+a) The <font color="#FF5252">bill grows</font> with every answer you check.
+
+13
+00:00:27,590 --> 00:00:29,940
+b) Your yes carries <font color="#FF5252">no weight</font>.
+
+14
+00:00:29,940 --> 00:00:31,000
+A sure yes
+
+15
+00:00:31,000 --> 00:00:31,979
+and a coin-toss yes
+
+16
+00:00:31,979 --> 00:00:34,001
+look the same to the code that reads it.
+
+17
+00:00:34,001 --> 00:00:36,550
+<font color="#FFD700">RULE ONE: move yes-or-no checks off the frontier model.</font>
+
+18
+00:00:37,200 --> 00:00:40,060
+Now you are <font color="#00FFFF">not allowed to write</font>.
+
+19
+00:00:40,060 --> 00:00:42,250
+You get <font color="#00FFFF">two boxes</font>, yes and no,
+
+20
+00:00:42,250 --> 00:00:43,890
+and you put a <font color="#00FFFF">number</font> on each.
+
+21
+00:00:43,890 --> 00:00:47,730
+Yes <font color="#4ADE80">0.93</font>, no <font color="#FF5252">0.07</font>.
+
+22
+00:00:47,760 --> 00:00:49,700
+That is a <font color="#00FFFF">System One model</font>,
+
+23
+00:00:49,700 --> 00:00:52,570
+and <font color="#4ADE80">Jev</font> from TypeSafe is the first one.
+
+24
+00:00:52,580 --> 00:00:54,640
+You declare <font color="#00FFFF">the boxes</font> up front,
+
+25
+00:00:54,640 --> 00:00:58,350
+and every box comes back with a <font color="#00FFFF">probability</font> in one pass.
+
+26
+00:00:58,350 --> 00:01:01,790
+On 6,000 checks of financial research answers,
+
+27
+00:01:01,790 --> 00:01:07,080
+<font color="#4ADE80">Jev</font> agreed with the frontier judge <font color="#4ADE80">91.5%</font> of the time.
+
+28
+00:01:07,080 --> 00:01:11,140
+At that rate, a million checks cost <font color="#4ADE80">$160</font>
+
+29
+00:01:11,140 --> 00:01:13,120
+instead of <font color="#FF5252">$33,000</font>.
+
+30
+00:01:13,130 --> 00:01:16,490
+A cheap open model costs $260,
+
+31
+00:01:16,490 --> 00:01:19,760
+so most of the saving is <font color="#00FFFF">leaving the frontier model</font>.
+
+32
+00:01:19,760 --> 00:01:22,700
+What <font color="#4ADE80">Jev</font> adds is <font color="#4ADE80">the number on each box</font>.
+
+33
+00:01:22,700 --> 00:01:24,830
+Draw a line at <font color="#FFD700">0.95</font>.
+
+34
+00:01:24,830 --> 00:01:25,770
+Above it <font color="#4ADE80">ships</font>,
+
+35
+00:01:25,770 --> 00:01:29,860
+and between 0.6 and 0.95 goes to <font color="#00FFFF">a person</font>.
+
+36
+00:01:30,190 --> 00:01:32,890
+<font color="#FFD700">RULE TWO: route on the probability, not on the word.</font>
+
+37
+00:01:32,890 --> 00:01:34,810
+It always picks one of your boxes.
+
+38
+00:01:34,810 --> 00:01:36,690
+Testers sent a ticket classifier
+
+39
+00:01:36,690 --> 00:01:39,110
+30 messages that fit no box.
+
+40
+00:01:39,110 --> 00:01:40,670
+A <font color="#FF5252">cake recipe</font> came back
+
+41
+00:01:40,670 --> 00:01:43,580
+as a <font color="#FF5252">technical issue at 0.94</font>.
+
+42
+00:01:43,580 --> 00:01:45,570
+Not one of the 30 was <font color="#FF5252">flagged</font>.
+
+43
+00:01:45,570 --> 00:01:47,480
+It cannot return a wrong type.
+
+44
+00:01:47,480 --> 00:01:50,280
+It can return a <font color="#FF5252">wrong answer in the right type</font>,
+
+45
+00:01:50,280 --> 00:01:52,830
+with 0.94 on it.
+
+46
+00:01:52,830 --> 00:01:55,440
+<font color="#FFD700">RULE THREE: give every question a "none of these" box.</font>
+
+47
+00:01:55,450 --> 00:01:58,217
+How many labelled examples you need
+
+48
+00:01:58,217 --> 00:02:00,888
+to place that line is the next part.
+
+49
+00:02:00,888 --> 00:02:03,850
+<font color="#FFD700">Engineering track. Vault link in bio.</font>
+
