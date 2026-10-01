@@ -1,0 +1,40 @@
+{
+  "slug": "2609-refunded-twice",
+  "track": "engineering",
+  "title": "How to Design a Refund AI Agent That Never Refunds Twice — Why an Idempotency Key Isn't Enough #shorts",
+  "badge": "ENGINEERING",
+  "cover_title": "PAID TWICE. KEY AND ALL.",
+  "cover_title_alt": "REQUEST ≠ DECISION",
+  "end_card": "BLUEPRINT + CODE: THE VAULT · link in bio · follow for more · @ai.transition",
+  "caption": "ENGINEERING · How would you design a refund AI agent that doesn't refund twice? An idempotency key isn't enough.\n\nA customer emails about a missing parcel, then asks again on chat. Two tickets wake two agent runs. Neither knows about the other. You pay ₹1200 twice.\n\nWhy your idempotency key missed it: it catches a double click, the same request sent twice. Run two builds its own request with its own key, so it goes through. And the order page says \"not refunded\" until the bank settles.\n\nThe key catches a repeated request. This was a repeated decision.\n\n3 rules for any AI agent that takes real actions:\n\n1. Key every action on the thing it changes, not the ticket or the run. For a refund, that's the order line.\n2. Record every action in your own ledger before you call out, and check the ledger, not the downstream status.\n3. Allow one automatic run for any action you can't undo. A second refund goes to a human.\n\nSave this for your next agent design review. Send it to whoever owns your refund flow.\n\nBlueprint + ledger code are in the open vault. Link in bio.\n\n#aiagents #systemdesign #backendengineering #idempotency #llm",
+  "keywords": [
+    "refund ai agent",
+    "ai agent idempotency",
+    "idempotency key",
+    "duplicate refund",
+    "ai support agent design",
+    "agent tool design",
+    "payment idempotency",
+    "ledger before side effect",
+    "human in the loop ai agent",
+    "ai agent system design"
+  ],
+  "experiment": {
+    "id": null,
+    "variable": null,
+    "hypothesis": null,
+    "metric": null,
+    "baseline": null,
+    "win": null,
+    "result": null,
+    "decision": null,
+    "notes": "Not filled. First part with general-then-case build rules, short-phrase captions (89 tiles, ≤3 words) instead of one word per tile, and a cover with no part number."
+  },
+  "vault_artifact": "refund_ledger.py",
+  "sources": "No external figures. ₹1200 is a scene number. The pending-refund behaviour is illustrative, flagged in script.md.",
+  "runtime": "1:17",
+  "published": null,
+  "alt_text": "Whiteboard explainer: why an idempotency key doesn't stop an AI support agent from refunding the same order twice, and three rules to prevent it.",
+  "stands_on": null,
+  "production_notes": "See script.md, Production notes."
+}

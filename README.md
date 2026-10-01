@@ -34,6 +34,8 @@ Welcome to the **AI Architecture & Systems Engineering Vault**. This repository 
 * **[Part 15: $33,000 to Say Yes](./artifacts/2609-one-word-judge/)**
   * *Stands on:* Part 13 (detection cost — the check costs about as much as the work).
   * *Keywords:* LLM-as-Judge Cost ($33,000 vs. $160 per 1M Checks), Jev (TypeSafe AI) as the First System One Model, Typed Boxes with a Probability per Option, Confidence-Threshold Routing (Ship / Human Review), Frontier vs. Cheap Open Model vs. Decision Model, Forced-Choice Failure (0 of 30 Out-of-Scope Flagged), The "None of These" Box.
+* **[Part 16: Paid Twice, Key and All](./artifacts/2609-refunded-twice/)**
+  * *Keywords:* Refund AI Agent, Two Tickets → Two Agent Runs, Per-Call Idempotency Key vs. Repeated Decision, Pending Status Looks Like No Refund, Key on the Thing It Changes (Order Line + Action), Ledger Before the Side Effect, One Automatic Run per Irreversible Action, Human Queue for a Second Refund. Includes runnable reference code: `refund_ledger.py`.
 
 ### Track 2 — AI Product (runs alongside Track 1; part numbers stay cumulative)
 Product seen from the room where "what gets built" is decided. Same rule: one visual blueprint per part. Test for the track: if acting on the takeaway changes code inside a system already decided on, it's engineering; if it changes what gets built, or whether, it's product. Same gates as Track 1 — an aha, something countable, a drawable mechanism, survives model progress — and every product part names the engineering part it stands on.

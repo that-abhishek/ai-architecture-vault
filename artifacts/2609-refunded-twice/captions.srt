@@ -1,0 +1,355 @@
+1
+00:00:00,200 --> 00:00:00,720
+How would you
+
+2
+00:00:00,720 --> 00:00:01,920
+design a refund
+
+3
+00:00:01,920 --> 00:00:02,960
+<font color="#00FFFF"><b>AI agent</b></font> that
+
+4
+00:00:02,960 --> 00:00:03,520
+doesn't do
+
+5
+00:00:03,520 --> 00:00:04,640
+<font color="#FF5252"><b>multiple refunds?</b></font>
+
+6
+00:00:04,640 --> 00:00:05,040
+and an
+
+7
+00:00:05,040 --> 00:00:06,640
+<font color="#00FFFF"><b>idempotency key</b></font> is
+
+8
+00:00:06,640 --> 00:00:07,680
+<font color="#FF5252"><b>not enough</b></font>
+
+9
+00:00:07,680 --> 00:00:08,400
+The customer
+
+10
+00:00:08,400 --> 00:00:09,120
+emails about a
+
+11
+00:00:09,120 --> 00:00:10,210
+missing parcel
+
+12
+00:00:10,210 --> 00:00:11,250
+<font color="#00FFFF"><b>Run 1</b></font> refunds
+
+13
+00:00:11,250 --> 00:00:11,650
+it
+
+14
+00:00:11,650 --> 00:00:12,530
+She asks again
+
+15
+00:00:12,530 --> 00:00:13,170
+on chat
+
+16
+00:00:13,170 --> 00:00:14,290
+<font color="#00FFFF"><b>Run 2</b></font> starts
+
+17
+00:00:14,290 --> 00:00:14,930
+<font color="#FF5252"><b>knowing nothing</b></font>
+
+18
+00:00:14,930 --> 00:00:15,970
+about <font color="#00FFFF"><b>run 1</b></font>
+
+19
+00:00:15,970 --> 00:00:17,250
+It <font color="#FF5252"><b>refunds again</b></font>
+
+20
+00:00:17,250 --> 00:00:17,970
+You have paid
+
+21
+00:00:17,970 --> 00:00:19,440
+<font color="#FF5252"><b>₹1200</b></font>
+
+22
+00:00:19,440 --> 00:00:20,080
+<font color="#FF5252"><b>Twice</b></font>
+
+23
+00:00:20,080 --> 00:00:20,560
+<font color="#FFD700"><b>One</b></font>
+
+24
+00:00:20,560 --> 00:00:21,760
+<font color="#FFD700"><b>Key every action</b></font>
+
+25
+00:00:21,760 --> 00:00:22,480
+<font color="#FFD700"><b>on the thing</b></font>
+
+26
+00:00:22,480 --> 00:00:23,440
+<font color="#FFD700"><b>that it changes</b></font>
+
+27
+00:00:23,440 --> 00:00:23,920
+not on the
+
+28
+00:00:23,920 --> 00:00:24,560
+run or the
+
+29
+00:00:24,560 --> 00:00:25,520
+ticket ID
+
+30
+00:00:25,520 --> 00:00:26,480
+For a refund
+
+31
+00:00:26,480 --> 00:00:26,960
+that's your
+
+32
+00:00:26,960 --> 00:00:27,440
+original
+
+33
+00:00:27,440 --> 00:00:28,310
+<font color="#00FFFF"><b>order line</b></font>
+
+34
+00:00:28,310 --> 00:00:29,350
+Your <font color="#00FFFF"><b>key</b></font> catches
+
+35
+00:00:29,350 --> 00:00:30,390
+a <font color="#00FFFF"><b>double click</b></font>
+
+36
+00:00:30,390 --> 00:00:31,430
+One request sent
+
+37
+00:00:31,430 --> 00:00:31,990
+twice
+
+38
+00:00:31,990 --> 00:00:32,870
+<font color="#00FFFF"><b>Run 2</b></font> sends
+
+39
+00:00:32,870 --> 00:00:33,750
+its own request
+
+40
+00:00:33,750 --> 00:00:33,990
+and
+
+41
+00:00:33,990 --> 00:00:34,470
+<font color="#00FFFF"><b>key</b></font>
+
+42
+00:00:34,470 --> 00:00:35,270
+<font color="#00FFFF"><b>Run 2</b></font> checks
+
+43
+00:00:35,270 --> 00:00:35,990
+the order
+
+44
+00:00:35,990 --> 00:00:36,470
+It says
+
+45
+00:00:36,470 --> 00:00:37,670
+<font color="#FF5252"><b>not refunded</b></font> until
+
+46
+00:00:37,670 --> 00:00:38,610
+the bank settles
+
+47
+00:00:38,610 --> 00:00:39,650
+The <font color="#00FFFF"><b>key</b></font> catches
+
+48
+00:00:39,650 --> 00:00:40,930
+<font color="#00FFFF"><b>repeated requests</b></font>
+
+49
+00:00:40,930 --> 00:00:41,490
+This is a
+
+50
+00:00:41,490 --> 00:00:42,690
+<font color="#00FFFF"><b>repeated decision</b></font>
+
+51
+00:00:42,690 --> 00:00:43,090
+<font color="#FFD700"><b>Two</b></font>
+
+52
+00:00:43,090 --> 00:00:44,050
+<font color="#FFD700"><b>Record your every</b></font>
+
+53
+00:00:44,050 --> 00:00:44,850
+<font color="#FFD700"><b>action before</b></font>
+
+54
+00:00:44,850 --> 00:00:45,810
+<font color="#FFD700"><b>calling out</b></font> and
+
+55
+00:00:45,810 --> 00:00:46,930
+<font color="#FFD700"><b>check your records</b></font>
+
+56
+00:00:46,930 --> 00:00:47,730
+For a refund
+
+57
+00:00:47,730 --> 00:00:48,130
+that's your
+
+58
+00:00:48,130 --> 00:00:48,890
+<font color="#00FFFF"><b>ledger</b></font>
+
+59
+00:00:48,890 --> 00:00:49,690
+<font color="#00FFFF"><b>Run 2</b></font> calls
+
+60
+00:00:49,690 --> 00:00:50,330
+refund
+
+61
+00:00:50,330 --> 00:00:51,210
+The <font color="#00FFFF"><b>ledger</b></font> already
+
+62
+00:00:51,210 --> 00:00:51,610
+has this
+
+63
+00:00:51,610 --> 00:00:52,570
+<font color="#00FFFF"><b>order ID</b></font>
+
+64
+00:00:52,570 --> 00:00:53,450
+The tool moves
+
+65
+00:00:53,450 --> 00:00:55,290
+₹0 and replies
+
+66
+00:00:55,290 --> 00:00:56,410
+already started
+
+67
+00:00:56,410 --> 00:00:57,450
+The agent passes
+
+68
+00:00:57,450 --> 00:00:58,090
+that on
+
+69
+00:00:58,090 --> 00:00:58,890
+The <font color="#00FFFF"><b>ledger</b></font> also
+
+70
+00:00:58,890 --> 00:00:59,770
+blocks a real
+
+71
+00:00:59,770 --> 00:01:01,050
+second refund like
+
+72
+00:01:01,050 --> 00:01:02,290
+a goodwill credit
+
+73
+00:01:02,290 --> 00:01:03,010
+<font color="#FFD700"><b>Three</b></font>
+
+74
+00:01:03,010 --> 00:01:04,050
+<font color="#FFD700"><b>One automatic</b></font>
+
+75
+00:01:04,050 --> 00:01:04,770
+<font color="#FFD700"><b>action for</b></font>
+
+76
+00:01:04,770 --> 00:01:05,650
+<font color="#FFD700"><b>anything that you</b></font>
+
+77
+00:01:05,650 --> 00:01:06,850
+<font color="#FFD700"><b>cannot undo</b></font>
+
+78
+00:01:06,850 --> 00:01:07,810
+For refunds
+
+79
+00:01:07,810 --> 00:01:08,770
+a second run
+
+80
+00:01:08,770 --> 00:01:09,330
+goes to a
+
+81
+00:01:09,330 --> 00:01:09,970
+<font color="#FFD700"><b>human</b></font>
+
+82
+00:01:09,970 --> 00:01:10,770
+The <font color="#00FFFF"><b>ledger</b></font> code
+
+83
+00:01:10,770 --> 00:01:11,090
+is in the
+
+84
+00:01:11,090 --> 00:01:11,570
+vault
+
+85
+00:01:11,570 --> 00:01:12,130
+<font color="#FFD700"><b>Link in the</b></font>
+
+86
+00:01:12,130 --> 00:01:12,610
+<font color="#FFD700"><b>bio</b></font>
+
+87
+00:01:12,610 --> 00:01:13,330
+<font color="#FFD700"><b>Follow along</b></font> for
+
+88
+00:01:13,330 --> 00:01:13,810
+more such
+
+89
+00:01:13,810 --> 00:01:14,690
+breakdowns
