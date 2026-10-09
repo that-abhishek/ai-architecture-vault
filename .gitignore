@@ -14,6 +14,8 @@ Claude outputs/
 # ─── Private: channel performance data ────────────────────────────────
 metrics/
 artifacts/*/metrics.json
+parts/*/metrics.json
+parts/*/_production/metrics.json
 
 # ─── Secrets ──────────────────────────────────────────────────────────
 .env

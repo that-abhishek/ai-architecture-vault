@@ -1,0 +1,29 @@
+{
+  "part": 4,
+  "name": "Post-Training Alignment",
+  "slug": "04-post-training-alignment",
+  "old_slug": "2608-post-training-alignment",
+  "track": "engineering",
+  "format": "early",
+  "published": "2026-08-20",
+  "reel_url": "https://www.instagram.com/reel/DcRZlYTR_Hw/",
+  "question": "Why does a freshly pretrained model answer a question with another question?",
+  "problem": "A base model learned to continue internet text. Ask it a question and it treats it like a quiz sheet and writes more questions.",
+  "points_heading": "The idea",
+  "points": [
+    "Supervised fine-tuning wraps conversations in a chat template and computes loss only on the assistant's reply.",
+    "Preference alignment (RLHF or DPO) teaches judgment by rewarding the preferred of two answers.",
+    "Pretraining gives the model its knowledge. Post-training gives it the assistant's format and judgment."
+  ],
+  "formula": "\\mathcal{L}_{\\text{DPO}} = -\\mathbb{E}\\left[\\log \\sigma\\left(\\beta \\log \\frac{\\pi_\\theta(y_w \\mid x)}{\\pi_{\\text{ref}}(y_w \\mid x)} - \\beta \\log \\frac{\\pi_\\theta(y_l \\mid x)}{\\pi_{\\text{ref}}(y_l \\mid x)}\\right)\\right]",
+  "title": "Why $50M Base Models Fail: SFT and RLHF Explained #shorts",
+  "badge": "LLM FOUNDATIONS • PART 04",
+  "keywords": [
+    "post-training",
+    "sft",
+    "rlhf",
+    "dpo",
+    "alignment"
+  ],
+  "stands_on": null
+}

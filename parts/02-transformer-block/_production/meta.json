@@ -1,0 +1,28 @@
+{
+  "part": 2,
+  "name": "Transformer Block",
+  "slug": "02-transformer-block",
+  "old_slug": "2608-transformer-block",
+  "track": "engineering",
+  "format": "early",
+  "published": "2026-08-16",
+  "reel_url": "https://www.instagram.com/reel/DcGhURzxKby/",
+  "question": "What happens to a sentence inside one transformer block?",
+  "problem": "Attention lets words share context. On its own it can't store facts, and a deep stack of it loses the original meaning on the way through.",
+  "points_heading": "The idea",
+  "points": [
+    "Words become embedding vectors, with position tags so the order survives.",
+    "Each block runs attention (words share context), then a feed-forward network (each token looks up stored facts on its own).",
+    "Skip connections carry the original vector around each step, so the meaning isn't erased."
+  ],
+  "formula": "X_1 = X + \\text{MHSA}(\\text{LN}(X)), \\quad X_2 = X_1 + \\text{FFN}(\\text{LN}(X_1))",
+  "title": "Transformer Architecture Explained in 3 Steps #shorts",
+  "badge": "LLM FOUNDATIONS • PART 02",
+  "keywords": [
+    "transformer architecture",
+    "attention mechanism",
+    "neural networks",
+    "deep learning"
+  ],
+  "stands_on": null
+}

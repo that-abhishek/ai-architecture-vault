@@ -1,0 +1,34 @@
+{
+  "part": 11,
+  "name": "Prompt Injection",
+  "slug": "11-prompt-injection",
+  "old_slug": "2609-promp-injection",
+  "track": "engineering",
+  "published": "2026-09-06",
+  "reel_url": "https://www.instagram.com/reel/Dc8fESOxrk0/",
+  "question": "Why is there no patch for prompt injection, and what do you build instead?",
+  "problem": "SQL injection was fixed with parameterised queries, because SQL has a grammar. A model reads the system prompt, the user's message and an attacker's sentence as one string.",
+  "points_heading": "The three rules",
+  "points": [
+    "Give the agent only the tools the task needs.",
+    "Ask a human before anything irreversible: send, delete, pay.",
+    "Never let untrusted content call a tool."
+  ],
+  "title": "Prompt Injection: Why LLM Security Has No Fix (And What To Do Instead) #shorts",
+  "badge": "SECURITY & AGENTS • PART 11",
+  "cover_title": "PROMPT INJECTION",
+  "caption": "Prompt injection explained — why LLM security has no fix, and how to build AI agents that survive it anyway.\n\nYour LLM app has an SQL-injection problem, and there's no parameterized query for it.\n\nSQL had a grammar, so we could put a wall between code and data. A large language model has no grammar. System prompt, user input and an attacker's sentence hidden in an email or webpage all arrive as one string — same tokens, no labels. That's why prompt injection has sat at #1 on the OWASP LLM Top 10 since the list existed, and why filtering \"ignore previous instructions\" is a blacklist that a language model will always out-rewrite.\n\nYou don't stop the injection. You make it worthless:\n① least-privilege tools — the agent only gets what the task needs\n② human confirmation on anything irreversible — send, delete, pay\n③ untrusted content never calls a tool\n\nThat's the AI agent security blueprint for Part 11. Script, canvas and notes are in the open vault — link in bio.\n\nOne visual blueprint a week on AI engineering and how LLM systems actually work. Follow @ai.transition (IG) / @ai.transition.official (YT).\n\n#promptinjection #llmsecurity #aiengineering #aiagents #systemdesign\n\n[prompt injection, llm security, ai agent security, indirect prompt injection, owasp llm top 10, least privilege, human in the loop, tool calling, ai engineering, system design, ai infrastructure]",
+  "keywords": [
+    "prompt injection",
+    "llm security",
+    "ai agent security",
+    "indirect prompt injection",
+    "owasp llm top 10",
+    "least privilege",
+    "human in the loop",
+    "dual-llm pattern",
+    "tool calling",
+    "system design"
+  ],
+  "stands_on": null
+}

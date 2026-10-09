@@ -1,0 +1,28 @@
+{
+  "part": 8,
+  "name": "Remote MCP Architecture",
+  "slug": "08-remote-mcp",
+  "old_slug": "2608-remote-mcp-architecture",
+  "track": "engineering",
+  "format": "early",
+  "published": "2026-08-25",
+  "reel_url": "https://www.instagram.com/reel/DceKwrFRm6a/",
+  "question": "What does a 37-line MCP server need before it can run in production?",
+  "problem": "measure.sh's MCP layer is 37 lines of Go. Its session-bound OAuth is 827 lines and its tool catalogue is over 2,000.",
+  "points_heading": "The idea",
+  "points": [
+    "The protocol is JSON-RPC, and an SDK already solves it.",
+    "Remote MCP needs auth: OAuth 2.1 with short, self-revoking sessions.",
+    "Nested agent tools need recursion guards. Text-to-SQL needs schema pruning, a read-only parse, a forced tenant id and a read replica."
+  ],
+  "title": "The 37-Line Remote MCP Myth: Production Architecture Teardown #shorts",
+  "badge": "APPLIED SYSTEMS • PART 08",
+  "keywords": [
+    "mcp",
+    "model context protocol",
+    "oauth2",
+    "text-to-sql",
+    "agents"
+  ],
+  "stands_on": null
+}

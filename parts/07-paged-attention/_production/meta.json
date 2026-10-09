@@ -1,0 +1,28 @@
+{
+  "part": 7,
+  "name": "PagedAttention",
+  "slug": "07-paged-attention",
+  "old_slug": "2608-paged-attention",
+  "track": "engineering",
+  "format": "early",
+  "published": "2026-08-29",
+  "reel_url": "https://www.instagram.com/reel/DcoL-DgR3Io/",
+  "question": "Why do LLM servers leave most of their GPU memory empty, and how does paging fix it?",
+  "problem": "A server can't know how long a reply will be, so it reserves a worst-case block of GPU memory for every request. 60 to 80% of it sits empty.",
+  "points_heading": "The idea",
+  "points": [
+    "Split the KV cache into fixed pages of 16 tokens.",
+    "A page table maps each request's tokens to pages anywhere in GPU memory, allocated as the reply grows.",
+    "Waste drops under 4%, so more requests fit in a batch: 2 to 4x throughput on the same GPU."
+  ],
+  "title": "How vLLM and PagedAttention Fixed LLM Memory Waste #shorts",
+  "badge": "SERVING & MEMORY • PART 07",
+  "keywords": [
+    "pagedattention",
+    "vllm",
+    "memory management",
+    "cuda",
+    "serving"
+  ],
+  "stands_on": null
+}

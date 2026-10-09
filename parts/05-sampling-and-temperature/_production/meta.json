@@ -1,0 +1,29 @@
+{
+  "part": 5,
+  "name": "Sampling & Temperature",
+  "slug": "05-sampling-and-temperature",
+  "old_slug": "2608-inference-sampling",
+  "track": "engineering",
+  "format": "early",
+  "published": "2026-08-21",
+  "reel_url": "https://www.instagram.com/reel/DcUOXUfRbHx/",
+  "question": "How does a model pick its next word, and what does temperature change?",
+  "problem": "Send the same prompt twice and you get two different answers. The model scores every word in its vocabulary, then samples one.",
+  "points_heading": "The idea",
+  "points": [
+    "Softmax turns the raw scores (logits) into probabilities that add up to 1.",
+    "Temperature divides the logits first: low sharpens the top choice, high flattens the curve.",
+    "Top-p keeps only the smallest set of words covering p of the probability, so a high temperature doesn't pick nonsense."
+  ],
+  "formula": "P(w_i) = \\frac{\\exp(z_i / T)}{\\sum_j \\exp(z_j / T)}",
+  "title": "How LLMs Actually Choose Words: Sampling & Temperature Explained #shorts",
+  "badge": "LLM FOUNDATIONS • PART 05",
+  "keywords": [
+    "inference",
+    "sampling",
+    "temperature",
+    "top-p",
+    "softmax"
+  ],
+  "stands_on": null
+}

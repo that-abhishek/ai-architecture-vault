@@ -1,0 +1,55 @@
+{
+  "part": 15,
+  "name": "$33,000 to Say Yes",
+  "slug": "15-33000-to-say-yes",
+  "old_slug": "2609-one-word-judge",
+  "track": "engineering",
+  "published": "2026-09-24",
+  "reel_url": "https://www.instagram.com/reel/DdrDfAuxsx8/",
+  "question": "How do you cut an LLM yes/no check from $33,000 to $160 per million?",
+  "problem": "A frontier LLM judge costs about $33,000 per million yes/no checks, and a sure yes looks exactly like a coin-toss yes to your if (yes).",
+  "points_heading": "The three rules",
+  "points": [
+    "Move yes/no checks off the frontier model.",
+    "Route on the probability, not on the word: above 0.95 ships, 0.6 to 0.95 goes to a person.",
+    "Give every question a \"none of these\" box."
+  ],
+  "stands_on": {
+    "part": 13,
+    "why": "the check costs about as much as the work; this part makes the yes/no check cheap"
+  },
+  "title": "Jev Model Explained — $33,000 vs $160 for 1M LLM-Judge Checks (TypeSafe AI's System One Model) #shorts",
+  "badge": "ENGINEERING • PART 15",
+  "cover_title": "$33,000 TO SAY YES",
+  "cover_title_alt": "ONE WORD, TWO PRICES",
+  "end_card": "FRONTIER WRITES / JEV PICKS / A SYSTEM ONE MODEL · @ai.transition",
+  "caption": "Jev Model by TypeSafe AI: the first System One model. Your LLM judge costs $33,000 per 1M checks. Jev does it for $160.\nAI Engineering · Part 15\n\nYour app ships a million AI answers. Before each one goes out, a frontier judge reads answer + source and says yes or no.\n\nAt frontier prices, that one word costs $33,000 per 1M checks.\n\nTwo problems:\na) the bill grows with every answer\nb) a sure yes and a coin-toss yes look the same to your if(yes)\n\nYou declare the boxes up front (yes / no), and Jev returns every box with a probability in one pass: yes 0.93, no 0.07.\n\nIn an independent test on 6,003 checks of financial-research answers, Jev agreed with the frontier judge 91.5% of the time.\n\nCost per 1M checks:\nFrontier judge — $33,000\nCheap open model — $260\nJev — $160\n\nMost of the saving is leaving the frontier model. What Jev adds is the number on each box. Draw a line at 0.95: above it ships, 0.6–0.95 goes to a person.\n\nThe limit: it always picks one of your boxes. Testers sent 30 messages that fit no box. A cake recipe came back as \"technical issue, 0.94\". 0 of 30 flagged. It can't return a wrong type. It can return a wrong answer in the right type.\n\nRULE 1: Move yes/no checks off the frontier model.\nRULE 2: Route on the probability, not on the word.\nRULE 3: Give every question a \"none of these\" box.\n\nSources and numbers in the open vault, link in bio.\n\nNext part: how many labelled examples you need to place that 0.95 line.\n\nEngineering track · follow for both tracks.\n\n#jevmodel #typesafeai #systemonemodel #llmjudge #llmevaluation #aiengineering #llmops #aicostoptimization #backendengineering",
+  "keywords": [
+    "jev model",
+    "typesafe ai",
+    "system one model",
+    "llm as a judge cost",
+    "llm evaluation at scale",
+    "calibrated classification llm",
+    "confidence threshold routing",
+    "structured output decision model",
+    "none of the above option classifier",
+    "ai cost optimization"
+  ],
+  "experiment": {
+    "id": null,
+    "variable": null,
+    "hypothesis": null,
+    "metric": null,
+    "baseline": null,
+    "win": null,
+    "result": null,
+    "decision": null,
+    "notes": "Not filled. First part to name a vendor on screen and in the caption (editorial change, 24 Sep 2026: a vendor is fine when it's a utility with an independently evidenced production optimization). It also interrupts the three consecutive product parts planned under E2. Read it against Parts 12–13 as an engineering baseline."
+  },
+  "vault_artifact": null,
+  "sources": "Good Start Labs, 'Verification is the bottleneck' (15 Sep 2026): 6,003 rubric checks, 91.5% agreement, $160 vs $33,000 per 1M. Langfuse blog (18 Sep 2026): DeepSeek V4.1 Flash $260 / 93.5%. priorbench/jev (20 Sep 2026, jev-1.13-20260917): 0 of 30 out-of-scope flagged without a none option; cake recipe → technical issue 0.94. TypeSafe launch post (15 Sep 2026) for the mechanism. The full table with flags is in script.md.",
+  "runtime": "2:06",
+  "alt_text": "Handwritten whiteboard: an answer and its source going to a frontier judge that says yes for $33,000 per million checks; a model that only picks, returning yes 0.93 and no 0.07 with a line at 0.95 splitting ship from human review, $160 against $33,000; and a cake recipe classified as a technical issue at 0.94, with a none-of-these box added.",
+  "production_notes": "See script.md, Production notes."
+}

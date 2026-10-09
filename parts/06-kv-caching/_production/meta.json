@@ -1,0 +1,28 @@
+{
+  "part": 6,
+  "name": "KV Caching",
+  "slug": "06-kv-caching",
+  "old_slug": "2608-kv-caching",
+  "track": "engineering",
+  "format": "early",
+  "published": "2026-08-27",
+  "reel_url": "https://www.instagram.com/reel/DcjpCfWR9pu/",
+  "question": "Why does a long conversation eat your GPU memory?",
+  "problem": "To write token 100, attention needs the keys and values of the 99 before it. Without a cache, the GPU recomputes all of them at every step.",
+  "points_heading": "The idea",
+  "points": [
+    "Compute each token's key and value once and keep them in GPU memory.",
+    "Each new step computes only the new token's query.",
+    "The cache grows with prompt length and with the number of users, until it can take more memory than the model weights."
+  ],
+  "formula": "\\text{Memory}_{\\text{KV}} = 2 \\times n_{\\text{layers}} \\times n_{\\text{heads}} \\times d_k \\times \\text{seq\\_len} \\times \\text{bytes}",
+  "title": "The Hidden Memory Bottleneck in LLMs: KV Caching Explained #shorts",
+  "badge": "SERVING & MEMORY • PART 06",
+  "keywords": [
+    "kv cache",
+    "gpu memory",
+    "vram",
+    "inference optimization"
+  ],
+  "stands_on": null
+}

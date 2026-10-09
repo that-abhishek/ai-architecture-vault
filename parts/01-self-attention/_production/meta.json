@@ -1,0 +1,29 @@
+{
+  "part": 1,
+  "name": "Self-Attention",
+  "slug": "01-self-attention",
+  "old_slug": "2608-self-attention",
+  "track": "engineering",
+  "format": "early",
+  "published": "2026-08-12",
+  "reel_url": "https://www.instagram.com/reel/Db8_l6bx_2l/",
+  "question": "How does a model work out which words in a sentence matter to each other?",
+  "problem": "Fifty people are talking at once in one room. An older model walks up to each person in turn, which is slow, and by person 50 it has forgotten what person 1 said.",
+  "points_heading": "The idea",
+  "points": [
+    "Every token looks at every other token at the same time, in parallel.",
+    "Each token carries a Query (what it is looking for), a Key (what it holds) and a Value (what it hands over).",
+    "One token's Query dotted with another's Key decides how much of that token's Value it takes in."
+  ],
+  "formula": "\\text{Attention}(Q, K, V) = \\text{softmax}\\left(\\frac{QK^T}{\\sqrt{d_k}}\\right)V",
+  "title": "How Self-Attention Works in Transformers Explained #shorts",
+  "badge": "LLM FOUNDATIONS • PART 01",
+  "keywords": [
+    "transformers",
+    "self-attention",
+    "deep learning",
+    "system design",
+    "llm architecture"
+  ],
+  "stands_on": null
+}

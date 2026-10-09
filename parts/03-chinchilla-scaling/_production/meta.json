@@ -1,0 +1,28 @@
+{
+  "part": 3,
+  "name": "Chinchilla Scaling Laws",
+  "slug": "03-chinchilla-scaling",
+  "old_slug": "2608-chinchilla-scaling",
+  "track": "engineering",
+  "format": "early",
+  "published": "2026-08-18",
+  "reel_url": "https://www.instagram.com/reel/DcMkA1qRxRH/",
+  "question": "With a fixed compute budget, do you make the model bigger or feed it more data?",
+  "problem": "Gopher had 280B parameters trained on 300B tokens. Chinchilla, 70B parameters on 1.4T tokens, beat it on the same compute budget.",
+  "points_heading": "The idea",
+  "points": [
+    "Parameters and training tokens should grow together.",
+    "Compute-optimal is roughly 20 training tokens per parameter.",
+    "The smaller, longer-trained model is also cheaper to serve on every request."
+  ],
+  "formula": "C \\approx 6ND, \\quad D \\approx 20N",
+  "title": "Why Bigger AI Models Aren't Smarter (Chinchilla Scaling Law) #shorts",
+  "badge": "LLM FOUNDATIONS • PART 03",
+  "keywords": [
+    "scaling laws",
+    "chinchilla",
+    "llm training",
+    "deep learning"
+  ],
+  "stands_on": null
+}
