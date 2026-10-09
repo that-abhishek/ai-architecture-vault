@@ -39,6 +39,9 @@ Welcome to the **AI Architecture & Systems Engineering Vault**. This repository 
 * **[Part 17: Saved Tokens. Wrong City.](./artifacts/2609-memory-graph-vs-summary/)**
   * *Keywords:* AI Agent Memory, Running Summary vs. Memory Graph, Rolling Summary Drops Facts Before the Question Exists, Stale Value Survives a Rewrite (Pune vs. Chennai), Entity · Property · Value + Timestamp, Newest Value on a Key Wins, Question Reads Only the Node It Names, Loose Keys (deliver_to vs. shipping_city), Fixed Property List Before the First Write, Short Summary for the Thread. Includes runnable reference code: `memory_store.py`.
 
+* **[Part 18: Thinking Off. Flight Missed.](./artifacts/2610-forty-minute-connection/)**
+  * *Keywords:* Making an AI Agent Smarter Without Training, One Pass per Token (Writing More = Thinking More), Thinking Mode as Hidden Steps, Thinking Tokens Billed as Output (300 + 6,000 = 21x), Thinking On Only Where the Answer Needs Steps, Thinking Cap per Route (Not the Model Maximum), Reasoning Field Before the Answer Field When Thinking Is Off, Thinking Adds Steps Not Facts. Includes runnable reference code: `thinking_router.py`.
+
 ### Track 2 — AI Product (runs alongside Track 1; part numbers stay cumulative)
 Product seen from the room where "what gets built" is decided. Same rule: one visual blueprint per part. Test for the track: if acting on the takeaway changes code inside a system already decided on, it's engineering; if it changes what gets built, or whether, it's product. Same gates as Track 1 — an aha, something countable, a drawable mechanism, survives model progress — and every product part names the engineering part it stands on.
 

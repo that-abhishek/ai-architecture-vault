@@ -1,0 +1,143 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="3582" viewBox="0 0 1600 3582" font-family="Caveat">
+<style>
+  text{fill:#fff;font-family:Caveat}
+  .w{stroke:#fff;fill:none;stroke-width:6;stroke-linecap:round;stroke-linejoin:round}
+  .thin{stroke:#fff;fill:none;stroke-width:4;stroke-linecap:round}
+  .dim{stroke:#666;fill:none;stroke-width:6;stroke-linecap:round;stroke-linejoin:round}
+  .r{stroke:#FF5252;fill:none;stroke-width:9;stroke-linecap:round;stroke-linejoin:round}
+  .g{stroke:#4ADE80;fill:none;stroke-width:8;stroke-linecap:round;stroke-linejoin:round}
+  .c{stroke:#00FFFF;fill:none;stroke-width:5;stroke-linecap:round;stroke-linejoin:round}
+  .y{stroke:#FFD700;fill:none;stroke-width:6;stroke-linecap:round;stroke-linejoin:round}
+  .cy{fill:#00FFFF}.rd{fill:#FF5252}.gn{fill:#4ADE80}.gd{fill:#FFD700}.gy{fill:#777}
+  .h{font-size:78px;font-weight:700}
+  .t{font-size:54px}
+  .s{font-size:42px}
+  .xs{font-size:34px}
+  .tk{font-size:58px;font-weight:700}
+  .big{font-size:150px;font-weight:700}
+  .mid{font-size:96px;font-weight:700}
+</style>
+<defs>
+  <marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#fff"/></marker>
+  <marker id="ac" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#00FFFF"/></marker>
+  <marker id="ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#FF5252"/></marker>
+</defs>
+<rect width="1600" height="3582" fill="#000"/>
+<path class="w" d="M40 40 Q800 30 1560 42 L1555 3540 Q800 3550 45 3538 Z"/>
+<path class="w" d="M45 1210 Q800 1195 1555 1215"/>
+<path class="w" d="M45 2400 Q800 2415 1555 2398"/>
+
+<!-- PANEL 1 : One pass per word -->
+<circle class="w" cx="118" cy="128" r="38"/><text class="h" x="98" y="155">1</text>
+<text class="h" x="188" y="152">One pass per word</text>
+
+<!-- 1. three facts -->
+<text class="t" x="100" y="270">lands 2:00, T1</text>
+<text class="t" x="100" y="340">next 2:40, T3</text>
+<text class="t" x="100" y="410">transfer: 1 hr</text>
+
+<!-- 2. one pass box, one arrow out per word -->
+<path class="thin" d="M480 340 L540 340" marker-end="url(#a)"/>
+<g transform="translate(555 270)"><path class="w" d="M0 0 H300 V140 H0 Z" style="stroke-width:10"/><text class="t" x="45" y="88">one pass</text></g>
+<path class="thin" d="M870 300 L980 260" marker-end="url(#a)"/>
+
+<!-- 3. first word out: book, circled red -->
+<text class="mid" x="1000" y="280">book</text>
+<ellipse class="r" cx="1105" cy="250" rx="140" ry="72"/>
+
+<!-- 4. to think more, write more: checks loop back -->
+<text class="t cy" x="100" y="620">to think more,</text><text class="t cy" x="100" y="690">write more</text>
+<path class="thin" d="M870 380 Q930 460 990 600" marker-end="url(#a)"/>
+<text class="t" x="1010" y="620">gap: 40 min</text>
+<path class="c" d="M1000 640 Q880 640 800 420" marker-end="url(#ac)"/>
+<text class="t" x="1010" y="710">need: 60 min</text>
+<path class="c" d="M1000 730 Q840 730 740 420" marker-end="url(#ac)"/>
+
+<!-- 5. 40 less than 60, red cross -->
+<text class="t rd" x="1010" y="800">40 less than 60</text>
+<path class="r" d="M1440 755 L1490 805 M1490 755 L1440 805"/>
+
+<!-- 6. book crossed out -->
+<path class="r" d="M985 255 L1225 245" style="stroke-width:11"/>
+
+<!-- 7. rule -->
+<text class="tk gd" x="100" y="1010">RULE: thinking on where the answer</text>
+<text class="tk gd" x="100" y="1080">needs steps</text>
+<path class="y" d="M100 1098 Q300 1090 400 1100"/>
+<text class="s" x="130" y="1160">AI travel agent: the connection check</text>
+
+<!-- PANEL 2 : What thinking costs -->
+<circle class="w" cx="118" cy="1298" r="38"/><text class="h" x="98" y="1325">2</text>
+<text class="h" x="188" y="1322">What thinking costs</text>
+
+<!-- 1. reply 300 -->
+<text class="t" x="100" y="1460">reply</text>
+<path class="w" d="M300 1420 H370 V1475 H300 Z"/>
+<text class="t" x="390" y="1462">300</text>
+
+<!-- 2. thinking 6,000 -->
+<text class="t" x="100" y="1590">thinking</text>
+<path class="r" d="M300 1545 H1400 V1605 H300 Z" style="stroke-width:7"/>
+<text class="t rd" x="320" y="1690">6,000</text>
+
+<!-- 3. 21x the output -->
+<text class="big rd" x="100" y="1880">21x</text>
+<text class="t" x="400" y="1860">the output</text>
+
+<!-- 4. every call -->
+<text class="t" x="400" y="1930">every call</text>
+
+<!-- 5. route box with cap -->
+<g transform="translate(900 1760)">
+  <path class="w" d="M0 0 H560 V200 H0 Z"/>
+  <text class="t" x="40" y="75">connection check</text>
+  <path class="thin" d="M40 100 H520" style="stroke:#777"/>
+  <text class="t cy" x="40" y="165">cap: few thousand</text>
+</g>
+
+<!-- 6. rule -->
+<text class="tk gd" x="100" y="2240">RULE: a thinking cap per route,</text>
+<text class="tk gd" x="100" y="2310">not the max</text>
+<path class="y" d="M100 2328 Q260 2320 380 2330"/>
+<text class="s" x="130" y="2380">connection check: a few thousand</text>
+
+<!-- PANEL 3 : The steps, for free -->
+<circle class="w" cx="118" cy="2488" r="38"/><text class="h" x="98" y="2515">3</text>
+<text class="h" x="188" y="2512">The steps, for free</text>
+
+<!-- 1. thinking off, box greyed -->
+<g transform="translate(1180 2440)"><path class="dim" d="M0 0 H300 V120 H0 Z" style="stroke-dasharray:18 12"/><text class="t gy" x="45" y="78">one pass</text></g>
+<text class="t" x="1180" y="2620">thinking: off</text>
+
+<!-- 2. JSON, book: yes first in red -->
+<g transform="translate(100 2620)">
+  <path class="w" d="M0 0 H480 V260 H0 Z"/>
+  <text class="t" x="25" y="60">{</text>
+  <text class="t rd" x="60" y="115">book: yes</text>
+  <text class="t" x="60" y="185">reason: ...</text>
+  <text class="t" x="25" y="240">}</text>
+</g>
+
+<!-- 3. written first -->
+<path class="r" d="M820 2720 L470 2720" marker-end="url(#ar)" style="stroke-width:6"/>
+<text class="s rd" x="840" y="2735">written first</text>
+
+<!-- 4. no checks yet -->
+<text class="s rd" x="840" y="2800">no checks yet</text>
+
+<!-- 5. redrawn: checks first, book last -->
+<g transform="translate(100 2940)">
+  <path class="w" d="M0 0 H760 V260 H0 Z"/>
+  <text class="t" x="25" y="60">{</text>
+  <text class="t cy" x="60" y="115">checks: gap 40, need 60</text>
+  <text class="t gn" x="60" y="185">book: no</text>
+  <text class="t" x="25" y="240">}</text>
+</g>
+<path class="g" d="M900 3060 L930 3095 L985 3025"/>
+
+<!-- 6. rule -->
+<text class="tk gd" x="100" y="3380">RULE: reasoning field before</text>
+<text class="tk gd" x="100" y="3450">the answer field</text>
+<path class="y" d="M100 3468 Q280 3460 470 3470"/>
+<text class="s" x="130" y="3520">booking: checks, then book: yes/no</text>
+</svg>
