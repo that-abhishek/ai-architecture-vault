@@ -114,16 +114,20 @@ def production_contents(folder):
     return found[0] if len(found) == 1 else ", ".join(found[:-1]) + " and " + found[-1]
 
 
+def topics(p):
+    return " ".join(f"`{t}`" for t in p.get("topics") or [])
+
+
 def row(p):
     code = "✓" if p.get("code") else ""
     return (f"| {p['part']:02d} | [{p['name']}](parts/{p['slug']}/) | {p['question']} "
-            f"| {track_label(p)} | {code} |")
+            f"| {topics(p)} | {track_label(p)} | {code} |")
 
 
 def root_readme(parts):
     main = [p for p in reversed(parts) if p.get("format") != "early"]
     early = [p for p in parts if p.get("format") == "early"]
-    header = "| Part | Reel | The question | Track | Code |\n|---|---|---|---|---|"
+    header = "| Part | Reel | The question | Topics | Track | Code |\n|---|---|---|---|---|---|"
     lines = [
         GENERATED, "",
         "# AI Architecture Vault", "",

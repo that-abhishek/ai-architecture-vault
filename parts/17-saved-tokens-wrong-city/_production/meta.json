@@ -4,6 +4,10 @@
   "slug": "17-saved-tokens-wrong-city",
   "old_slug": "2609-memory-graph-vs-summary",
   "track": "engineering",
+  "topics": [
+    "agents",
+    "memory"
+  ],
   "published": "2026-10-04",
   "reel_url": "https://www.instagram.com/reel/DeEbehLRSeM/",
   "question": "Should an agent remember with a running summary or a memory graph?",

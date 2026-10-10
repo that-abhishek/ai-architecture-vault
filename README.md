@@ -12,33 +12,33 @@ The whiteboard, script and code behind every [@ai.transition](https://instagram.
 
 Newest first.
 
-| Part | Reel | The question | Track | Code |
-|---|---|---|---|---|
-| 19 | [Filter On. Answers Gone.](parts/19-filter-on-answers-gone/) | How do you build an AI search agent that respects user roles and still finds the right document? | Engineering |  |
-| 18 | [Thinking Off. Flight Missed.](parts/18-thinking-off-flight-missed/) | How do you make an agent smarter without training a new model? | Engineering | ✓ |
-| 17 | [Saved Tokens. Wrong City.](parts/17-saved-tokens-wrong-city/) | Should an agent remember with a running summary or a memory graph? | Engineering | ✓ |
-| 16 | [Paid Twice. Key and All.](parts/16-paid-twice/) | How do you stop a refund agent paying twice when it already has an idempotency key? | Engineering | ✓ |
-| 15 | [$33,000 to Say Yes](parts/15-33000-to-say-yes/) | How do you cut an LLM yes/no check from $33,000 to $160 per million? | Engineering |  |
-| 14 | [Ads in AI: Four Placements, One Label](parts/14-ads-in-ai/) | How does a paid product end up inside an AI assistant's answer? | AI Product | ✓ |
-| 13 | [Your Agent's Errors Return 200](parts/13-errors-return-200/) | Why does your retry logic never fire when the agent is wrong? | Engineering |  |
-| 12 | [Half the Tokens, 3x the Bill](parts/12-half-the-tokens-3x-the-bill/) | How can summarising your agent's history triple your bill? | Engineering |  |
-| 11 | [Prompt Injection](parts/11-prompt-injection/) | Why is there no patch for prompt injection, and what do you build instead? | Engineering |  |
-| 10 | [Mobile Systems → AI Systems](parts/10-mobile-to-ai-systems/) | Which LLM serving problems has a mobile engineer already solved? | Engineering |  |
-| 09 | [Context Distraction](parts/09-context-distraction/) | Why does adding more retrieved context make the answer worse? | Engineering |  |
+| Part | Reel | The question | Topics | Track | Code |
+|---|---|---|---|---|---|
+| 19 | [Filter On. Answers Gone.](parts/19-filter-on-answers-gone/) | How do you build an AI search agent that respects user roles and still finds the right document? | `rag` `reranking` `access control` | Engineering |  |
+| 18 | [Thinking Off. Flight Missed.](parts/18-thinking-off-flight-missed/) | How do you make an agent smarter without training a new model? | `agents` `reasoning` `cost` | Engineering | ✓ |
+| 17 | [Saved Tokens. Wrong City.](parts/17-saved-tokens-wrong-city/) | Should an agent remember with a running summary or a memory graph? | `agents` `memory` | Engineering | ✓ |
+| 16 | [Paid Twice. Key and All.](parts/16-paid-twice/) | How do you stop a refund agent paying twice when it already has an idempotency key? | `agents` `reliability` `idempotency` | Engineering | ✓ |
+| 15 | [$33,000 to Say Yes](parts/15-33000-to-say-yes/) | How do you cut an LLM yes/no check from $33,000 to $160 per million? | `cost` `classification` `evaluation` | Engineering |  |
+| 14 | [Ads in AI: Four Placements, One Label](parts/14-ads-in-ai/) | How does a paid product end up inside an AI assistant's answer? | `product` `ads` | AI Product | ✓ |
+| 13 | [Your Agent's Errors Return 200](parts/13-errors-return-200/) | Why does your retry logic never fire when the agent is wrong? | `agents` `reliability` `evaluation` | Engineering |  |
+| 12 | [Half the Tokens, 3x the Bill](parts/12-half-the-tokens-3x-the-bill/) | How can summarising your agent's history triple your bill? | `cost` `prompt caching` `agents` | Engineering |  |
+| 11 | [Prompt Injection](parts/11-prompt-injection/) | Why is there no patch for prompt injection, and what do you build instead? | `security` `agents` | Engineering |  |
+| 10 | [Mobile Systems → AI Systems](parts/10-mobile-to-ai-systems/) | Which LLM serving problems has a mobile engineer already solved? | `serving` `gpu memory` | Engineering |  |
+| 09 | [Context Distraction](parts/09-context-distraction/) | Why does adding more retrieved context make the answer worse? | `rag` `context` | Engineering |  |
 
 <details>
 <summary><b>Foundations, Parts 01–08</b> (the early format: how the model itself works, no whiteboard canvas)</summary>
 
-| Part | Reel | The question | Track | Code |
-|---|---|---|---|---|
-| 01 | [Self-Attention](parts/01-self-attention/) | How does a model work out which words in a sentence matter to each other? | Engineering |  |
-| 02 | [Transformer Block](parts/02-transformer-block/) | What happens to a sentence inside one transformer block? | Engineering |  |
-| 03 | [Chinchilla Scaling Laws](parts/03-chinchilla-scaling/) | With a fixed compute budget, do you make the model bigger or feed it more data? | Engineering |  |
-| 04 | [Post-Training Alignment](parts/04-post-training-alignment/) | Why does a freshly pretrained model answer a question with another question? | Engineering |  |
-| 05 | [Sampling & Temperature](parts/05-sampling-and-temperature/) | How does a model pick its next word, and what does temperature change? | Engineering |  |
-| 06 | [KV Caching](parts/06-kv-caching/) | Why does a long conversation eat your GPU memory? | Engineering |  |
-| 07 | [PagedAttention](parts/07-paged-attention/) | Why do LLM servers leave most of their GPU memory empty, and how does paging fix it? | Engineering |  |
-| 08 | [Remote MCP Architecture](parts/08-remote-mcp/) | What does a 37-line MCP server need before it can run in production? | Engineering |  |
+| Part | Reel | The question | Topics | Track | Code |
+|---|---|---|---|---|---|
+| 01 | [Self-Attention](parts/01-self-attention/) | How does a model work out which words in a sentence matter to each other? | `transformers` `attention` | Engineering |  |
+| 02 | [Transformer Block](parts/02-transformer-block/) | What happens to a sentence inside one transformer block? | `transformers` | Engineering |  |
+| 03 | [Chinchilla Scaling Laws](parts/03-chinchilla-scaling/) | With a fixed compute budget, do you make the model bigger or feed it more data? | `training` `scaling laws` | Engineering |  |
+| 04 | [Post-Training Alignment](parts/04-post-training-alignment/) | Why does a freshly pretrained model answer a question with another question? | `training` `alignment` | Engineering |  |
+| 05 | [Sampling & Temperature](parts/05-sampling-and-temperature/) | How does a model pick its next word, and what does temperature change? | `inference` `decoding` | Engineering |  |
+| 06 | [KV Caching](parts/06-kv-caching/) | Why does a long conversation eat your GPU memory? | `inference` `gpu memory` | Engineering |  |
+| 07 | [PagedAttention](parts/07-paged-attention/) | Why do LLM servers leave most of their GPU memory empty, and how does paging fix it? | `inference` `serving` `gpu memory` | Engineering |  |
+| 08 | [Remote MCP Architecture](parts/08-remote-mcp/) | What does a 37-line MCP server need before it can run in production? | `mcp` `tools` `auth` | Engineering |  |
 
 </details>
 

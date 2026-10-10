@@ -4,6 +4,11 @@
   "slug": "13-errors-return-200",
   "old_slug": "2609-detection-cost",
   "track": "engineering",
+  "topics": [
+    "agents",
+    "reliability",
+    "evaluation"
+  ],
   "published": "2026-09-15",
   "reel_url": "https://www.instagram.com/reel/DdT-hkURufh/",
   "question": "Why does your retry logic never fire when the agent is wrong?",

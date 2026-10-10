@@ -4,6 +4,11 @@
   "slug": "12-half-the-tokens-3x-the-bill",
   "old_slug": "2609-conversation-cost",
   "track": "engineering",
+  "topics": [
+    "cost",
+    "prompt caching",
+    "agents"
+  ],
   "published": "2026-09-10",
   "reel_url": "https://www.instagram.com/reel/DdHv6nmRZba/",
   "question": "How can summarising your agent's history triple your bill?",

@@ -4,6 +4,11 @@
   "slug": "08-remote-mcp",
   "old_slug": "2608-remote-mcp-architecture",
   "track": "engineering",
+  "topics": [
+    "mcp",
+    "tools",
+    "auth"
+  ],
   "format": "early",
   "published": "2026-08-25",
   "reel_url": "https://www.instagram.com/reel/DceKwrFRm6a/",

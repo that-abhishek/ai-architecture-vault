@@ -4,6 +4,10 @@
   "slug": "06-kv-caching",
   "old_slug": "2608-kv-caching",
   "track": "engineering",
+  "topics": [
+    "inference",
+    "gpu memory"
+  ],
   "format": "early",
   "published": "2026-08-27",
   "reel_url": "https://www.instagram.com/reel/DcjpCfWR9pu/",

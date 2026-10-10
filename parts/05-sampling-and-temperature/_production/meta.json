@@ -4,6 +4,10 @@
   "slug": "05-sampling-and-temperature",
   "old_slug": "2608-inference-sampling",
   "track": "engineering",
+  "topics": [
+    "inference",
+    "decoding"
+  ],
   "format": "early",
   "published": "2026-08-21",
   "reel_url": "https://www.instagram.com/reel/DcUOXUfRbHx/",

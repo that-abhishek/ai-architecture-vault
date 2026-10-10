@@ -4,6 +4,10 @@
   "slug": "09-context-distraction",
   "old_slug": "2609-context-distraction",
   "track": "engineering",
+  "topics": [
+    "rag",
+    "context"
+  ],
   "published": "2026-09-02",
   "reel_url": "https://www.instagram.com/reel/DcyOvS4xPB1/",
   "question": "Why does adding more retrieved context make the answer worse?",

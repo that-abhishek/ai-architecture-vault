@@ -4,6 +4,10 @@
   "slug": "03-chinchilla-scaling",
   "old_slug": "2608-chinchilla-scaling",
   "track": "engineering",
+  "topics": [
+    "training",
+    "scaling laws"
+  ],
   "format": "early",
   "published": "2026-08-18",
   "reel_url": "https://www.instagram.com/reel/DcMkA1qRxRH/",

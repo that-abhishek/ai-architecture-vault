@@ -4,6 +4,11 @@
   "slug": "07-paged-attention",
   "old_slug": "2608-paged-attention",
   "track": "engineering",
+  "topics": [
+    "inference",
+    "serving",
+    "gpu memory"
+  ],
   "format": "early",
   "published": "2026-08-29",
   "reel_url": "https://www.instagram.com/reel/DcoL-DgR3Io/",

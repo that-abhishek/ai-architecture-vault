@@ -3,6 +3,11 @@
   "name": "Filter On. Answers Gone.",
   "slug": "19-filter-on-answers-gone",
   "track": "engineering",
+  "topics": [
+    "rag",
+    "reranking",
+    "access control"
+  ],
   "published": "2026-10-10",
   "reel_url": null,
   "question": "How do you build an AI search agent that respects user roles and still finds the right document?",

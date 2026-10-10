@@ -4,6 +4,11 @@
   "slug": "16-paid-twice",
   "old_slug": "2609-refunded-twice",
   "track": "engineering",
+  "topics": [
+    "agents",
+    "reliability",
+    "idempotency"
+  ],
   "published": "2026-10-01",
   "reel_url": "https://www.instagram.com/reel/Dd9E6QoR3V6/",
   "question": "How do you stop a refund agent paying twice when it already has an idempotency key?",

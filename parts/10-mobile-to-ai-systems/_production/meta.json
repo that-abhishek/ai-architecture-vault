@@ -4,6 +4,10 @@
   "slug": "10-mobile-to-ai-systems",
   "old_slug": "2609-mobile-to-ai-systems",
   "track": "engineering",
+  "topics": [
+    "serving",
+    "gpu memory"
+  ],
   "published": "2026-09-04",
   "reel_url": "https://www.instagram.com/reel/Dc3-zdFxNiV/",
   "question": "Which LLM serving problems has a mobile engineer already solved?",

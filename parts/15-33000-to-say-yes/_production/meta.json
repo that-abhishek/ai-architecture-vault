@@ -4,6 +4,11 @@
   "slug": "15-33000-to-say-yes",
   "old_slug": "2609-one-word-judge",
   "track": "engineering",
+  "topics": [
+    "cost",
+    "classification",
+    "evaluation"
+  ],
   "published": "2026-09-24",
   "reel_url": "https://www.instagram.com/reel/DdrDfAuxsx8/",
   "question": "How do you cut an LLM yes/no check from $33,000 to $160 per million?",

@@ -4,6 +4,10 @@
   "slug": "11-prompt-injection",
   "old_slug": "2609-promp-injection",
   "track": "engineering",
+  "topics": [
+    "security",
+    "agents"
+  ],
   "published": "2026-09-06",
   "reel_url": "https://www.instagram.com/reel/Dc8fESOxrk0/",
   "question": "Why is there no patch for prompt injection, and what do you build instead?",

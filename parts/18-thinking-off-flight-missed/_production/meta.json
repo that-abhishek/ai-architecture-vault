@@ -4,6 +4,11 @@
   "slug": "18-thinking-off-flight-missed",
   "old_slug": "2610-forty-minute-connection",
   "track": "engineering",
+  "topics": [
+    "agents",
+    "reasoning",
+    "cost"
+  ],
   "published": "2026-10-08",
   "reel_url": "https://www.instagram.com/reel/DePXqI0T1Dx/",
   "question": "How do you make an agent smarter without training a new model?",

@@ -38,6 +38,7 @@ raw/<NN-cover-name>/      takes, screen recordings, audio fixes (git-ignored)
 | `slug` | the folder name, exactly |
 | `old_slug` | only for parts that existed before the Oct 2026 restructure |
 | `track` | `engineering` or `product` |
+| `topics` | 1–3 short lower-case tags for the README table, reusing existing ones where they fit (`agents`, `rag`, `cost`, `reliability`, `security`, `inference`, `training`, …) |
 | `published` | `YYYY-MM-DD` of the Instagram post |
 | `reel_url` | the Instagram reel link |
 | `question` | one line, the question the reel answers, ending in `?` |

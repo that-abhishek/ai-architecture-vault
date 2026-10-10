@@ -4,6 +4,10 @@
   "slug": "01-self-attention",
   "old_slug": "2608-self-attention",
   "track": "engineering",
+  "topics": [
+    "transformers",
+    "attention"
+  ],
   "format": "early",
   "published": "2026-08-12",
   "reel_url": "https://www.instagram.com/reel/Db8_l6bx_2l/",
