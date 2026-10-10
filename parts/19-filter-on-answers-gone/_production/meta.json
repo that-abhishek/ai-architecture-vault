@@ -1,0 +1,51 @@
+{
+  "part": 19,
+  "name": "Filter On. Answers Gone.",
+  "slug": "19-filter-on-answers-gone",
+  "track": "engineering",
+  "published": "2026-10-10",
+  "reel_url": null,
+  "question": "How do you build an AI search agent that respects user roles and still finds the right document?",
+  "problem": "You added a role filter to your company's AI search agent so interns can't see salaries. An intern asks whether she can carry over unused leave, the five closest documents are all manager policies, the filter removes them, and the agent says \"no policy found\".",
+  "points_heading": "The three rules",
+  "points": [
+    "Put the role filter inside the first query, before any top-k. For the intern, WHERE runs before LIMIT.",
+    "Fetch wide with the cheap search, then sort again before the cut. For the intern, 50 in, 5 out.",
+    "Log the cited document's rank before reranking. If it keeps arriving near 50, widen the first stage."
+  ],
+  "stands_on": null,
+  "title": "How to Build an AI Search Agent That Respects User Roles — Role Filters, Top-K and Rerankers in RAG #shorts",
+  "badge": "ENGINEERING",
+  "cover_title": "FILTER ON. ANSWERS GONE.",
+  "cover_title_alt": "WHERE AFTER LIMIT.",
+  "end_card": null,
+  "caption": "ENGINEERING · How do you build an AI search agent that respects user roles and still finds the right document?\n\nYou added a role filter so interns can't see salaries. Now interns get empty answers.\n\nAn intern asks: can I carry over unused leave? The agent's vector search pulls the 5 closest documents. All 5 are manager policies. Then the role filter removes them. Nothing is left, so the agent says \"no policy found\". In SQL, that's LIMIT before WHERE.\n\nMove the filter first and the intern's leave policy survives. It ranks 11th. Vector search turned every document into an embedding before anyone asked, so \"carry over\" and \"leave encashment\" sit close together. The top-5 cut drops it again.\n\nThat's the job of a reranker. Fetch 50 with the cheap vector search. The reranker reads the question and each document together and picks the 5. It sees \"carry over\" in both, and the policy moves to the top. It costs one model call per document, so it runs on 50, not the whole library.\n\n3 rules for any RAG system with permissions:\n\n1. Put the role filter inside the first query, before any top-k. For the intern, WHERE runs before LIMIT.\n2. Fetch wide with the cheap search, then sort again before the cut. For the intern, 50 in, 5 out.\n3. Log the cited document's rank before reranking. If it keeps arriving near 50, widen the first stage.\n\nA document that ranks below 50 in the first search never reaches the reranker.\n\nSave this for your next RAG design review. Send it to whoever owns your search agent's access control.\n\nBlueprint is in the open vault. Link in bio.\n\n#rag #aiagents #vectorsearch #reranking #llm #aiengineering #retrievalaugmentedgeneration #systemdesign #backendengineering #genai",
+  "keywords": [
+    "ai search agent role based access",
+    "permission filter rag",
+    "filter before top-k vector search",
+    "vector search post-filtering empty results",
+    "reranker",
+    "cross-encoder vs embeddings",
+    "rerank retrieval top 50 to top 5",
+    "rag system design",
+    "retrieval augmented generation access control",
+    "ai agent system design"
+  ],
+  "experiment": {
+    "id": null,
+    "variable": "Talking-head explainer cards with sound effects over the hook and the three rules (first part with on-screen animation outside the board)",
+    "hypothesis": "A moving picture of each rule while it is said to camera keeps viewers through the takeaways and lifts saves",
+    "metric": "Average watch time (secondary: saves)",
+    "baseline": "Parts 16-18",
+    "win": null,
+    "result": null,
+    "decision": null,
+    "notes": "Win line not set before posting. Hook card is a single beat on 'empty answers'; the close has no card. On camera he said 'a policy before 50 never reaches it' (script: below); the caption carries 'below 50'."
+  },
+  "vault_artifact": null,
+  "sources": "Bi-encoder retrieval (document vectors made before the query) vs cross-encoder reranking (one forward pass per question-document pair), and post-filtering after approximate top-k returning fewer than k results: standard retrieval behaviour, not a single cited source. 5, 11th and 50 are scene numbers.",
+  "runtime": "1:19",
+  "alt_text": "Whiteboard explainer: why a role filter applied after top-k leaves an AI search agent with no documents, how a reranker lifts the right policy from 11th to 1st, and three rules for retrieval with permissions.",
+  "production_notes": "See script.md, Production notes."
+}

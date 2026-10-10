@@ -1,0 +1,355 @@
+1
+00:00:00,050 --> 00:00:00,720
+You added a
+
+2
+00:00:00,720 --> 00:00:01,600
+<font color="#00FFFF"><b>role filter</b></font> to
+
+3
+00:00:01,600 --> 00:00:02,400
+your company's
+
+4
+00:00:02,400 --> 00:00:03,600
+<font color="#00FFFF"><b>AI search agent</b></font>
+
+5
+00:00:03,600 --> 00:00:04,640
+so interns can't
+
+6
+00:00:04,640 --> 00:00:05,520
+see salary
+
+7
+00:00:05,520 --> 00:00:05,840
+Now
+
+8
+00:00:05,840 --> 00:00:06,640
+interns get
+
+9
+00:00:06,640 --> 00:00:07,760
+<font color="#FF5252"><b>empty answers</b></font>
+
+10
+00:00:07,760 --> 00:00:08,740
+An intern asks
+
+11
+00:00:08,740 --> 00:00:09,220
+Can I
+
+12
+00:00:09,220 --> 00:00:10,100
+<font color="#00FFFF"><b>carry over</b></font> unused
+
+13
+00:00:10,100 --> 00:00:10,660
+leaves?
+
+14
+00:00:10,660 --> 00:00:11,540
+Your agent pulls
+
+15
+00:00:11,540 --> 00:00:12,500
+5 closest
+
+16
+00:00:12,500 --> 00:00:13,140
+documents
+
+17
+00:00:13,140 --> 00:00:13,860
+All 5 are
+
+18
+00:00:13,860 --> 00:00:15,060
+<font color="#FF5252"><b>manager policies</b></font>
+
+19
+00:00:15,060 --> 00:00:15,940
+The <font color="#00FFFF"><b>role filter</b></font>
+
+20
+00:00:15,940 --> 00:00:16,980
+removes them and
+
+21
+00:00:16,980 --> 00:00:18,120
+the agent says
+
+22
+00:00:18,120 --> 00:00:19,160
+<font color="#FF5252"><b>No policy found</b></font>
+
+23
+00:00:19,160 --> 00:00:20,040
+In <font color="#00FFFF"><b>SQL</b></font>
+
+24
+00:00:20,040 --> 00:00:21,000
+that is <font color="#00FFFF"><b>LIMIT</b></font>
+
+25
+00:00:21,000 --> 00:00:21,800
+before <font color="#00FFFF"><b>WHERE</b></font>
+
+26
+00:00:21,800 --> 00:00:22,200
+<font color="#FFD700"><b>One</b></font>
+
+27
+00:00:22,200 --> 00:00:22,600
+Put the
+
+28
+00:00:22,600 --> 00:00:24,120
+<font color="#00FFFF"><b>role filter</b></font> inside
+
+29
+00:00:24,120 --> 00:00:25,240
+the first query
+
+30
+00:00:25,240 --> 00:00:26,620
+before any <font color="#00FFFF"><b>top-k</b></font>
+
+31
+00:00:26,620 --> 00:00:27,580
+For the intern
+
+32
+00:00:27,580 --> 00:00:28,780
+<font color="#00FFFF"><b>WHERE</b></font> runs before
+
+33
+00:00:28,780 --> 00:00:29,420
+<font color="#00FFFF"><b>LIMIT</b></font>
+
+34
+00:00:29,420 --> 00:00:30,300
+Move the filter
+
+35
+00:00:30,300 --> 00:00:30,780
+first
+
+36
+00:00:30,780 --> 00:00:31,900
+The intern's leave
+
+37
+00:00:31,900 --> 00:00:33,020
+policy survives
+
+38
+00:00:33,020 --> 00:00:33,740
+and it ranks
+
+39
+00:00:33,740 --> 00:00:34,380
+11th
+
+40
+00:00:34,380 --> 00:00:35,340
+The search turned
+
+41
+00:00:35,340 --> 00:00:36,660
+every document
+
+42
+00:00:36,660 --> 00:00:37,780
+into a <font color="#00FFFF"><b>vector</b></font>
+
+43
+00:00:37,780 --> 00:00:38,500
+before anyone
+
+44
+00:00:38,500 --> 00:00:39,060
+asked
+
+45
+00:00:39,060 --> 00:00:40,100
+<font color="#00FFFF"><b>Carry over</b></font> and
+
+46
+00:00:40,100 --> 00:00:41,540
+encashment read as
+
+47
+00:00:41,540 --> 00:00:42,340
+leave so they
+
+48
+00:00:42,340 --> 00:00:43,220
+sit together
+
+49
+00:00:43,220 --> 00:00:43,940
+<font color="#00FFFF"><b>LIMIT 5</b></font>
+
+50
+00:00:43,940 --> 00:00:45,020
+<font color="#FF5252"><b>cuts it again</b></font>
+
+51
+00:00:45,020 --> 00:00:45,500
+<font color="#FFD700"><b>Two</b></font>
+
+52
+00:00:45,500 --> 00:00:46,540
+<font color="#FFD700"><b>Fetch wide</b></font> with
+
+53
+00:00:46,540 --> 00:00:47,740
+the <font color="#00FFFF"><b>cheap search</b></font>
+
+54
+00:00:47,740 --> 00:00:48,780
+then <font color="#FFD700"><b>sort again</b></font>
+
+55
+00:00:48,780 --> 00:00:49,820
+before the cut
+
+56
+00:00:49,820 --> 00:00:50,780
+For the intern
+
+57
+00:00:50,780 --> 00:00:51,740
+<font color="#FFD700"><b>50 in</b></font>
+
+58
+00:00:51,740 --> 00:00:52,780
+<font color="#FFD700"><b>5 out</b></font>
+
+59
+00:00:52,780 --> 00:00:53,660
+The second sort
+
+60
+00:00:53,660 --> 00:00:54,700
+is the <font color="#00FFFF"><b>reranker</b></font>
+
+61
+00:00:54,700 --> 00:00:55,500
+It reads the
+
+62
+00:00:55,500 --> 00:00:56,540
+question and one
+
+63
+00:00:56,540 --> 00:00:57,740
+document together
+
+64
+00:00:57,740 --> 00:00:58,220
+It sees
+
+65
+00:00:58,220 --> 00:00:59,180
+<font color="#00FFFF"><b>carry over</b></font> in
+
+66
+00:00:59,180 --> 00:00:59,740
+both
+
+67
+00:00:59,740 --> 00:01:00,780
+The policy moves
+
+68
+00:01:00,780 --> 00:01:01,660
+to the top
+
+69
+00:01:01,660 --> 00:01:02,540
+It costs one
+
+70
+00:01:02,540 --> 00:01:03,500
+<font color="#00FFFF"><b>model call</b></font> per
+
+71
+00:01:03,500 --> 00:01:04,220
+document
+
+72
+00:01:04,220 --> 00:01:05,020
+So it only
+
+73
+00:01:05,020 --> 00:01:06,140
+sees 50
+
+74
+00:01:06,140 --> 00:01:07,100
+A policy before
+
+75
+00:01:07,100 --> 00:01:07,740
+50
+
+76
+00:01:07,740 --> 00:01:08,780
+<font color="#FF5252"><b>never reaches it</b></font>
+
+77
+00:01:08,780 --> 00:01:09,180
+<font color="#FFD700"><b>Three</b></font>
+
+78
+00:01:09,180 --> 00:01:10,060
+<font color="#FFD700"><b>Log</b></font> the cited
+
+79
+00:01:10,060 --> 00:01:11,260
+document's rank
+
+80
+00:01:11,260 --> 00:01:12,460
+before <font color="#00FFFF"><b>reranking</b></font>
+
+81
+00:01:12,460 --> 00:01:13,260
+For the leave
+
+82
+00:01:13,260 --> 00:01:13,820
+policy
+
+83
+00:01:13,820 --> 00:01:14,860
+that's 11th
+
+84
+00:01:14,860 --> 00:01:15,660
+The blueprint is
+
+85
+00:01:15,660 --> 00:01:16,300
+in the vault
+
+86
+00:01:16,300 --> 00:01:17,180
+<font color="#FFD700"><b>Link in bio</b></font>
+
+87
+00:01:17,180 --> 00:01:17,820
+<font color="#FFD700"><b>Follow along</b></font> for
+
+88
+00:01:17,820 --> 00:01:18,300
+more such
+
+89
+00:01:18,300 --> 00:01:19,110
+breakdowns

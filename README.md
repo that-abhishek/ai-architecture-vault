@@ -14,6 +14,7 @@ Newest first.
 
 | Part | Reel | The question | Track | Code |
 |---|---|---|---|---|
+| 19 | [Filter On. Answers Gone.](parts/19-filter-on-answers-gone/) | How do you build an AI search agent that respects user roles and still finds the right document? | Engineering |  |
 | 18 | [Thinking Off. Flight Missed.](parts/18-thinking-off-flight-missed/) | How do you make an agent smarter without training a new model? | Engineering | ✓ |
 | 17 | [Saved Tokens. Wrong City.](parts/17-saved-tokens-wrong-city/) | Should an agent remember with a running summary or a memory graph? | Engineering | ✓ |
 | 16 | [Paid Twice. Key and All.](parts/16-paid-twice/) | How do you stop a refund agent paying twice when it already has an idempotency key? | Engineering | ✓ |
